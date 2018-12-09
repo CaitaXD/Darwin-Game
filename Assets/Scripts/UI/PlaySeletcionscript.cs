@@ -25,8 +25,8 @@ public class PlaySeletcionscript : MonoBehaviour {
             {
             if (_selectionscript.selectionIs == 0 && Input.GetKey(KeyCode.Return))
             {
-                plin.Play();
-                SceneManager.LoadScene("TutorialJumpandFusion", LoadSceneMode.Single);
+                //plin.Play();
+               // SceneManager.LoadScene("TutorialJumpandFusion", LoadSceneMode.Single);
             }
             if (_selectionscript.selectionIs == 1 && Input.GetKey(KeyCode.Return))
             {
