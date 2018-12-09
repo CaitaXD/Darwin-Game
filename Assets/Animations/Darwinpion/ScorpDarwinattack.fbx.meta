@@ -1,0 +1,253 @@
+fileFormatVersion: 2
+guid: 07be5ec78dc2c4046be835235ac8d753
+ModelImporter:
+  serializedVersion: 22
+  fileIDToRecycleName:
+    100000: Armature
+    100002: Body
+    100004: Body_end
+    100006: Bone
+    100008: Bone.001
+    100010: Bone.002
+    100012: Bone.003
+    100014: Bone.004
+    100016: Bone.005
+    100018: Bone.006
+    100020: Bone.006_end
+    100022: Ikleg.Left
+    100024: Ikleg.Right
+    100026: ikleg1
+    100028: ikleg1_end
+    100030: ikleg2
+    100032: ikleg2_end
+    100034: ikleg3
+    100036: ikleg3_end
+    100038: ikleg4
+    100040: ikleg4_end
+    100042: ikleg5
+    100044: ikleg5_end
+    100046: ikleg6
+    100048: ikleg6_end
+    100050: ikleg7
+    100052: ikleg7_end
+    100054: ikleg8
+    100056: ikleg8_end
+    100058: iktail
+    100060: iktail_end
+    100062: leg.Left
+    100064: leg.Left.001
+    100066: leg.Left.002
+    100068: leg.Left.002_end
+    100070: leg.Left.003
+    100072: leg.Left.004
+    100074: leg.Left.005
+    100076: leg.Left.005_end
+    100078: leg.Left.006
+    100080: leg.Left.007
+    100082: leg.Left.008
+    100084: leg.Left.008_end
+    100086: leg.Left.009
+    100088: leg.Left.010
+    100090: leg.Left.011
+    100092: leg.Left.011_end
+    100094: leg.Right
+    100096: leg.Right.001
+    100098: leg.Right.002
+    100100: leg.Right.002_end
+    100102: leg.Right.003
+    100104: leg.Right.004
+    100106: leg.Right.005
+    100108: leg.Right.005_end
+    100110: leg.Right.006
+    100112: leg.Right.007
+    100114: leg.Right.008
+    100116: leg.Right.008_end
+    100118: leg.Right.009
+    100120: leg.Right.010
+    100122: leg.Right.011
+    100124: leg.Right.011_end
+    100126: legs
+    100128: root
+    100130: //RootNode
+    400000: Armature
+    400002: Body
+    400004: Body_end
+    400006: Bone
+    400008: Bone.001
+    400010: Bone.002
+    400012: Bone.003
+    400014: Bone.004
+    400016: Bone.005
+    400018: Bone.006
+    400020: Bone.006_end
+    400022: Ikleg.Left
+    400024: Ikleg.Right
+    400026: ikleg1
+    400028: ikleg1_end
+    400030: ikleg2
+    400032: ikleg2_end
+    400034: ikleg3
+    400036: ikleg3_end
+    400038: ikleg4
+    400040: ikleg4_end
+    400042: ikleg5
+    400044: ikleg5_end
+    400046: ikleg6
+    400048: ikleg6_end
+    400050: ikleg7
+    400052: ikleg7_end
+    400054: ikleg8
+    400056: ikleg8_end
+    400058: iktail
+    400060: iktail_end
+    400062: leg.Left
+    400064: leg.Left.001
+    400066: leg.Left.002
+    400068: leg.Left.002_end
+    400070: leg.Left.003
+    400072: leg.Left.004
+    400074: leg.Left.005
+    400076: leg.Left.005_end
+    400078: leg.Left.006
+    400080: leg.Left.007
+    400082: leg.Left.008
+    400084: leg.Left.008_end
+    400086: leg.Left.009
+    400088: leg.Left.010
+    400090: leg.Left.011
+    400092: leg.Left.011_end
+    400094: leg.Right
+    400096: leg.Right.001
+    400098: leg.Right.002
+    400100: leg.Right.002_end
+    400102: leg.Right.003
+    400104: leg.Right.004
+    400106: leg.Right.005
+    400108: leg.Right.005_end
+    400110: leg.Right.006
+    400112: leg.Right.007
+    400114: leg.Right.008
+    400116: leg.Right.008_end
+    400118: leg.Right.009
+    400120: leg.Right.010
+    400122: leg.Right.011
+    400124: leg.Right.011_end
+    400126: legs
+    400128: root
+    400130: //RootNode
+    2100000: Material.002
+    2100002: Material.000
+    2100004: Material.001
+    4300000: legs
+    7400000: AttackDarpion
+    9500000: //RootNode
+    13700000: legs
+  externalObjects: {}
+  materials:
+    importMaterials: 1
+    materialName: 0
+    materialSearch: 1
+    materialLocation: 1
+  animations:
+    legacyGenerateAnimations: 4
+    bakeSimulation: 0
+    resampleCurves: 1
+    optimizeGameObjects: 0
+    motionNodeName: 
+    rigImportErrors: 
+    rigImportWarnings: 
+    animationImportErrors: 
+    animationImportWarnings: 
+    animationRetargetingWarnings: 
+    animationDoRetargetingWarnings: 0
+    importAnimatedCustomProperties: 0
+    importConstraints: 0
+    animationCompression: 1
+    animationRotationError: 0.5
+    animationPositionError: 0.5
+    animationScaleError: 0.5
+    animationWrapMode: 0
+    extraExposedTransformPaths: []
+    extraUserProperties: []
+    clipAnimations:
+    - serializedVersion: 16
+      name: AttackDarpion
+      takeName: Armature|ArmatureAction
+      firstFrame: 0
+      lastFrame: 19
+      wrapMode: 0
+      orientationOffsetY: 0
+      level: 0
+      cycleOffset: 0
+      loop: 0
+      hasAdditiveReferencePose: 0
+      loopTime: 0
+      loopBlend: 0
+      loopBlendOrientation: 0
+      loopBlendPositionY: 0
+      loopBlendPositionXZ: 0
+      keepOriginalOrientation: 0
+      keepOriginalPositionY: 1
+      keepOriginalPositionXZ: 0
+      heightFromFeet: 0
+      mirror: 0
+      bodyMask: 01000000010000000100000001000000010000000100000001000000010000000100000001000000010000000100000001000000
+      curves: []
+      events: []
+      transformMask: []
+      maskType: 3
+      maskSource: {instanceID: 0}
+      additiveReferencePoseFrame: 0
+    isReadable: 1
+  meshes:
+    lODScreenPercentages: []
+    globalScale: 1
+    meshCompression: 0
+    addColliders: 0
+    importVisibility: 1
+    importBlendShapes: 1
+    importCameras: 1
+    importLights: 1
+    swapUVChannels: 0
+    generateSecondaryUV: 0
+    useFileUnits: 1
+    optimizeMeshForGPU: 1
+    keepQuads: 0
+    weldVertices: 1
+    preserveHierarchy: 0
+    indexFormat: 0
+    secondaryUVAngleDistortion: 8
+    secondaryUVAreaDistortion: 15.000001
+    secondaryUVHardAngle: 88
+    secondaryUVPackMargin: 4
+    useFileScale: 1
+  tangentSpace:
+    normalSmoothAngle: 60
+    normalImportMode: 0
+    tangentImportMode: 3
+    normalCalculationMode: 4
+  importAnimation: 1
+  copyAvatar: 0
+  humanDescription:
+    serializedVersion: 2
+    human: []
+    skeleton: []
+    armTwist: 0.5
+    foreArmTwist: 0.5
+    upperLegTwist: 0.5
+    legTwist: 0.5
+    armStretch: 0.05
+    legStretch: 0.05
+    feetSpacing: 0
+    rootMotionBoneName: 
+    rootMotionBoneRotation: {x: 0, y: 0, z: 0, w: 1}
+    hasTranslationDoF: 0
+    hasExtraRoot: 0
+    skeletonHasParents: 1
+  lastHumanDescriptionAvatarSource: {instanceID: 0}
+  animationType: 2
+  humanoidOversampling: 1
+  additionalBone: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

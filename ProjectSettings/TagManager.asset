@@ -1,0 +1,67 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!78 &1
+TagManager:
+  serializedVersion: 2
+  tags:
+  - Camera Angle 2
+  - Camera Angle 3
+  - Camera Angle
+  - Enemy
+  - EnemyDamage
+  - PlayerDamage
+  - Cave1
+  - Cave2
+  - End
+  - Info
+  - Quicksand
+  - HpBar
+  - Spawn
+  - FusionDysplaySelection
+  - BC1
+  - BC2
+  - ChangeColl
+  - Collect
+  - Dead
+  - Teleport
+  - Stop
+  - NewFusion
+  - StopParallax
+  - ENDDEMO
+  layers:
+  - Default
+  - TransparentFX
+  - Ignore Raycast
+  - 
+  - Water
+  - UI
+  - 
+  - 
+  - Ground
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  m_SortingLayers:
+  - name: Default
+    uniqueID: 0
+    locked: 0

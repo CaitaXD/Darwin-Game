@@ -1,0 +1,318 @@
+fileFormatVersion: 2
+guid: 6a973da8576cb5b428a89f8ce3df854e
+timeCreated: 1534525788
+licenseType: Free
+ModelImporter:
+  serializedVersion: 22
+  fileIDToRecycleName:
+    100000: Armature
+    100002: Bone
+    100004: Bone.001
+    100006: Bone.001_end
+    100008: Bone.002
+    100010: ik1.Left
+    100012: ik1.Left_end
+    100014: ik1.Right
+    100016: ik1.Right_end
+    100018: ik2.Left
+    100020: ik2.Left_end
+    100022: ik2.Right
+    100024: ik2.Right_end
+    100026: ik3.Left
+    100028: ik3.Left_end
+    100030: ik3.Right
+    100032: ik3.Right_end
+    100034: ik4.Left
+    100036: ik4.Left_end
+    100038: ik4.Right
+    100040: ik4.Right_end
+    100042: IKLegs.Left
+    100044: IKLegs.Right
+    100046: Leg1A.Left
+    100048: Leg1B.Left
+    100050: Leg1B.Right
+    100052: Leg1C.Left
+    100054: Leg1C.Right
+    100056: Leg1D.Left
+    100058: Leg1D.Right
+    100060: Leg1E.Left
+    100062: Leg1E.Left_end
+    100064: Leg1E.Right
+    100066: Leg1E.Right_end
+    100068: Leg2A.Left
+    100070: Leg2A.Right
+    100072: Leg2A.Right.001
+    100074: Leg2B.Left
+    100076: Leg2B.Right
+    100078: Leg2C.Left
+    100080: Leg2C.Right
+    100082: Leg2D.Left
+    100084: Leg2D.Right
+    100086: Leg2E.Left
+    100088: Leg2E.Left_end
+    100090: Leg2E.Right
+    100092: Leg2E.Right_end
+    100094: Leg3A.Left
+    100096: Leg3A.Right
+    100098: Leg3B.Left
+    100100: Leg3B.Right
+    100102: Leg3C.Left
+    100104: Leg3C.Right
+    100106: Leg3D.Left
+    100108: Leg3D.Right
+    100110: Leg3E.Left
+    100112: Leg3E.Left_end
+    100114: Leg3E.Right
+    100116: Leg3E.Right_end
+    100118: Leg4A.Left
+    100120: Leg4A.Right
+    100122: Leg4B.Left
+    100124: Leg4B.Right
+    100126: Leg4C.Left
+    100128: Leg4C.Right
+    100130: Leg4D.Left
+    100132: Leg4D.Right
+    100134: Leg4E.Left
+    100136: Leg4E.Left_end
+    100138: Leg4E.Right
+    100140: Leg4E.Right_end
+    100142: Scropion
+    100144: //RootNode
+    100146: Tail0
+    100148: Tail1
+    100150: Tail2
+    100152: Tail3
+    100154: Tail4
+    100156: Tail5
+    100158: Tail6
+    100160: Tail6_end
+    400000: Armature
+    400002: Bone
+    400004: Bone.001
+    400006: Bone.001_end
+    400008: Bone.002
+    400010: ik1.Left
+    400012: ik1.Left_end
+    400014: ik1.Right
+    400016: ik1.Right_end
+    400018: ik2.Left
+    400020: ik2.Left_end
+    400022: ik2.Right
+    400024: ik2.Right_end
+    400026: ik3.Left
+    400028: ik3.Left_end
+    400030: ik3.Right
+    400032: ik3.Right_end
+    400034: ik4.Left
+    400036: ik4.Left_end
+    400038: ik4.Right
+    400040: ik4.Right_end
+    400042: IKLegs.Left
+    400044: IKLegs.Right
+    400046: Leg1A.Left
+    400048: Leg1B.Left
+    400050: Leg1B.Right
+    400052: Leg1C.Left
+    400054: Leg1C.Right
+    400056: Leg1D.Left
+    400058: Leg1D.Right
+    400060: Leg1E.Left
+    400062: Leg1E.Left_end
+    400064: Leg1E.Right
+    400066: Leg1E.Right_end
+    400068: Leg2A.Left
+    400070: Leg2A.Right
+    400072: Leg2A.Right.001
+    400074: Leg2B.Left
+    400076: Leg2B.Right
+    400078: Leg2C.Left
+    400080: Leg2C.Right
+    400082: Leg2D.Left
+    400084: Leg2D.Right
+    400086: Leg2E.Left
+    400088: Leg2E.Left_end
+    400090: Leg2E.Right
+    400092: Leg2E.Right_end
+    400094: Leg3A.Left
+    400096: Leg3A.Right
+    400098: Leg3B.Left
+    400100: Leg3B.Right
+    400102: Leg3C.Left
+    400104: Leg3C.Right
+    400106: Leg3D.Left
+    400108: Leg3D.Right
+    400110: Leg3E.Left
+    400112: Leg3E.Left_end
+    400114: Leg3E.Right
+    400116: Leg3E.Right_end
+    400118: Leg4A.Left
+    400120: Leg4A.Right
+    400122: Leg4B.Left
+    400124: Leg4B.Right
+    400126: Leg4C.Left
+    400128: Leg4C.Right
+    400130: Leg4D.Left
+    400132: Leg4D.Right
+    400134: Leg4E.Left
+    400136: Leg4E.Left_end
+    400138: Leg4E.Right
+    400140: Leg4E.Right_end
+    400142: Scropion
+    400144: //RootNode
+    400146: Tail0
+    400148: Tail1
+    400150: Tail2
+    400152: Tail3
+    400154: Tail4
+    400156: Tail5
+    400158: Tail6
+    400160: Tail6_end
+    2100000: No Name
+    4300000: Scropion
+    7400000: ScorpionAttack
+    7400002: Armature|ArmatureAction
+    9500000: //RootNode
+    13700000: Scropion
+  externalObjects: {}
+  materials:
+    importMaterials: 1
+    materialName: 0
+    materialSearch: 1
+    materialLocation: 1
+  animations:
+    legacyGenerateAnimations: 4
+    bakeSimulation: 0
+    resampleCurves: 1
+    optimizeGameObjects: 0
+    motionNodeName: 
+    rigImportErrors: 
+    rigImportWarnings: 
+    animationImportErrors: 
+    animationImportWarnings: 
+    animationRetargetingWarnings: 
+    animationDoRetargetingWarnings: 0
+    importAnimatedCustomProperties: 0
+    animationCompression: 1
+    animationRotationError: 0.5
+    animationPositionError: 0.5
+    animationScaleError: 0.5
+    animationWrapMode: 0
+    extraExposedTransformPaths: []
+    extraUserProperties: []
+    clipAnimations:
+    - serializedVersion: 16
+      name: ScorpionAttack
+      takeName: Armature|Arm
+      firstFrame: 0
+      lastFrame: 29
+      wrapMode: 0
+      orientationOffsetY: 0
+      level: 0
+      cycleOffset: 0
+      loop: 0
+      hasAdditiveReferencePose: 0
+      loopTime: 0
+      loopBlend: 0
+      loopBlendOrientation: 0
+      loopBlendPositionY: 0
+      loopBlendPositionXZ: 0
+      keepOriginalOrientation: 0
+      keepOriginalPositionY: 1
+      keepOriginalPositionXZ: 0
+      heightFromFeet: 0
+      mirror: 0
+      bodyMask: 01000000010000000100000001000000010000000100000001000000010000000100000001000000010000000100000001000000
+      curves: []
+      events:
+      - time: 0.20327103
+        functionName: StringCollider
+        data: 
+        objectReferenceParameter: {instanceID: 0}
+        floatParameter: 0
+        intParameter: 0
+        messageOptions: 0
+      transformMask: []
+      maskType: 3
+      maskSource: {instanceID: 0}
+      additiveReferencePoseFrame: 0
+    - serializedVersion: 16
+      name: Armature|ArmatureAction
+      takeName: Armature|ArmatureAction
+      firstFrame: 0
+      lastFrame: 29
+      wrapMode: 0
+      orientationOffsetY: 0
+      level: 0
+      cycleOffset: 0
+      loop: 0
+      hasAdditiveReferencePose: 0
+      loopTime: 0
+      loopBlend: 0
+      loopBlendOrientation: 0
+      loopBlendPositionY: 0
+      loopBlendPositionXZ: 0
+      keepOriginalOrientation: 0
+      keepOriginalPositionY: 1
+      keepOriginalPositionXZ: 0
+      heightFromFeet: 0
+      mirror: 0
+      bodyMask: 01000000010000000100000001000000010000000100000001000000010000000100000001000000010000000100000001000000
+      curves: []
+      events: []
+      transformMask: []
+      maskType: 3
+      maskSource: {instanceID: 0}
+      additiveReferencePoseFrame: 0
+    isReadable: 1
+  meshes:
+    lODScreenPercentages: []
+    globalScale: 1
+    meshCompression: 0
+    addColliders: 0
+    importVisibility: 1
+    importBlendShapes: 1
+    importCameras: 1
+    importLights: 1
+    swapUVChannels: 0
+    generateSecondaryUV: 0
+    useFileUnits: 1
+    optimizeMeshForGPU: 1
+    keepQuads: 0
+    weldVertices: 1
+    preserveHierarchy: 0
+    indexFormat: 0
+    secondaryUVAngleDistortion: 8
+    secondaryUVAreaDistortion: 15.000001
+    secondaryUVHardAngle: 88
+    secondaryUVPackMargin: 4
+    useFileScale: 1
+  tangentSpace:
+    normalSmoothAngle: 60
+    normalImportMode: 0
+    tangentImportMode: 3
+    normalCalculationMode: 4
+  importAnimation: 1
+  copyAvatar: 0
+  humanDescription:
+    serializedVersion: 2
+    human: []
+    skeleton: []
+    armTwist: 0.5
+    foreArmTwist: 0.5
+    upperLegTwist: 0.5
+    legTwist: 0.5
+    armStretch: 0.05
+    legStretch: 0.05
+    feetSpacing: 0
+    rootMotionBoneName: 
+    rootMotionBoneRotation: {x: 0, y: 0, z: 0, w: 1}
+    hasTranslationDoF: 0
+    hasExtraRoot: 0
+    skeletonHasParents: 1
+  lastHumanDescriptionAvatarSource: {instanceID: 0}
+  animationType: 2
+  humanoidOversampling: 1
+  additionalBone: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

@@ -1,0 +1,283 @@
+fileFormatVersion: 2
+guid: e28582b65de73314383242d39ada0de0
+ModelImporter:
+  serializedVersion: 23
+  fileIDToRecycleName:
+    100000: //RootNode
+    100002: Body
+    100004: Bone.002.Left
+    100006: Bone.002.Right
+    100008: Bone.003.Left
+    100010: Bone.003.Right
+    100012: Bone.004.Left
+    100014: Bone.004.Right
+    100016: Bone.005.Left
+    100018: Bone.005.Right
+    100020: Bone.006.Left
+    100022: Bone.006.Right
+    100024: Bone.007.Left
+    100026: Bone.007.Right
+    100028: Bone.008.Left
+    100030: Bone.008.Right
+    100032: Bone.009.Left
+    100034: Bone.009.Right
+    100036: Bone.010.Left
+    100038: Bone.010.Right
+    100040: Bone.011.Left
+    100042: Bone.011.Right
+    100044: Bone.012.Left
+    100046: Bone.012.Left_end
+    100048: Bone.012.Right
+    100050: Bone.012.Right_end
+    100052: Bone.013.Left
+    100054: Bone.013.Right
+    100056: Bone.014.Left
+    100058: Bone.014.Right
+    100060: Bone.015.Left
+    100062: Bone.015.Right
+    100064: Bone.016.Left
+    100066: Bone.016.Right
+    100068: Bone.017.Left
+    100070: Bone.017.Right
+    100072: Bone.018.Left
+    100074: Bone.018.Right
+    100076: Bone.019.Left
+    100078: Bone.019.Right
+    100080: Bone.020.Left
+    100082: Bone.020.Left_end
+    100084: Bone.020.Right
+    100086: Bone.020.Right_end
+    100088: Bone.021.Left
+    100090: Bone.021.Right
+    100092: Bone.022.Left
+    100094: Bone.022.Right
+    100096: Bone.023.Left
+    100098: Bone.023.Right
+    100100: Bone.024.Left
+    100102: Bone.024.Right
+    100104: Bone.025.Left
+    100106: Bone.025.Right
+    100108: Bone.026.Left
+    100110: Bone.026.Right
+    100112: Bone.027.Left
+    100114: Bone.027.Left_end
+    100116: Bone.027.Right
+    100118: Bone.027.Right_end
+    100120: Bone.028.Left
+    100122: Bone.028.Right
+    100124: Darwin
+    100126: DarwinFlyBoy
+    100128: Eye.L
+    100130: Eye.L_end
+    100132: Eye.R
+    100134: Eye.R_end
+    100136: IK_center
+    100138: IK_center_end
+    100140: IK_Eye.L
+    100142: IK_Eye.L_end
+    100144: IK_Eye.R
+    100146: IK_Eye.R_end
+    100148: IK_face
+    100150: IK_face_end
+    100152: IK_top
+    100154: IK_top_end
+    100156: LookControl
+    100158: RootTrasnform
+    100160: Sphere
+    100162: WingsHussars Arrvied
+    400000: //RootNode
+    400002: Body
+    400004: Bone.002.Left
+    400006: Bone.002.Right
+    400008: Bone.003.Left
+    400010: Bone.003.Right
+    400012: Bone.004.Left
+    400014: Bone.004.Right
+    400016: Bone.005.Left
+    400018: Bone.005.Right
+    400020: Bone.006.Left
+    400022: Bone.006.Right
+    400024: Bone.007.Left
+    400026: Bone.007.Right
+    400028: Bone.008.Left
+    400030: Bone.008.Right
+    400032: Bone.009.Left
+    400034: Bone.009.Right
+    400036: Bone.010.Left
+    400038: Bone.010.Right
+    400040: Bone.011.Left
+    400042: Bone.011.Right
+    400044: Bone.012.Left
+    400046: Bone.012.Left_end
+    400048: Bone.012.Right
+    400050: Bone.012.Right_end
+    400052: Bone.013.Left
+    400054: Bone.013.Right
+    400056: Bone.014.Left
+    400058: Bone.014.Right
+    400060: Bone.015.Left
+    400062: Bone.015.Right
+    400064: Bone.016.Left
+    400066: Bone.016.Right
+    400068: Bone.017.Left
+    400070: Bone.017.Right
+    400072: Bone.018.Left
+    400074: Bone.018.Right
+    400076: Bone.019.Left
+    400078: Bone.019.Right
+    400080: Bone.020.Left
+    400082: Bone.020.Left_end
+    400084: Bone.020.Right
+    400086: Bone.020.Right_end
+    400088: Bone.021.Left
+    400090: Bone.021.Right
+    400092: Bone.022.Left
+    400094: Bone.022.Right
+    400096: Bone.023.Left
+    400098: Bone.023.Right
+    400100: Bone.024.Left
+    400102: Bone.024.Right
+    400104: Bone.025.Left
+    400106: Bone.025.Right
+    400108: Bone.026.Left
+    400110: Bone.026.Right
+    400112: Bone.027.Left
+    400114: Bone.027.Left_end
+    400116: Bone.027.Right
+    400118: Bone.027.Right_end
+    400120: Bone.028.Left
+    400122: Bone.028.Right
+    400124: Darwin
+    400126: DarwinFlyBoy
+    400128: Eye.L
+    400130: Eye.L_end
+    400132: Eye.R
+    400134: Eye.R_end
+    400136: IK_center
+    400138: IK_center_end
+    400140: IK_Eye.L
+    400142: IK_Eye.L_end
+    400144: IK_Eye.R
+    400146: IK_Eye.R_end
+    400148: IK_face
+    400150: IK_face_end
+    400152: IK_top
+    400154: IK_top_end
+    400156: LookControl
+    400158: RootTrasnform
+    400160: Sphere
+    400162: WingsHussars Arrvied
+    2100000: Material.002
+    2100002: Material.001
+    2100004: Material
+    2100006: Material.010
+    2100008: Material.011
+    4300000: Darwin
+    4300002: Sphere
+    7400000: DarwinFlyBoy|DarwinFlyBoyAction
+    7400002: DarwinFlyBoy|KeyAction
+    7400004: DarwinFlyBoy|KeyAction.001
+    7400006: DarwinFlyBoy|KeyAction.002
+    7400008: DarwinFlyBoy|KeyAction.003
+    7400010: DarwinFlyBoy|KeyAction.004
+    7400012: DarwinFlyBoy|WingsHussars ArrviedAction
+    7400014: Darwin|KeyAction
+    7400016: Darwin|KeyAction.001
+    7400018: Darwin|KeyAction.002
+    7400020: Darwin|KeyAction.003
+    7400022: Darwin|KeyAction.004
+    7400024: Darwin|WingsHussars ArrviedAction
+    7400026: WingsHussars Arrvied|KeyAction
+    7400028: WingsHussars Arrvied|KeyAction.001
+    7400030: WingsHussars Arrvied|KeyAction.002
+    7400032: WingsHussars Arrvied|KeyAction.003
+    7400034: WingsHussars Arrvied|KeyAction.004
+    7400036: WingsHussars Arrvied|WingsHussars ArrviedAction
+    7400038: WingsHussars Arrvied|WingsHussars ArrviedAction.001
+    9500000: //RootNode
+    13700000: Darwin
+    13700002: Sphere
+    2186277476908879412: ImportLogs
+  externalObjects: {}
+  materials:
+    importMaterials: 1
+    materialName: 0
+    materialSearch: 1
+    materialLocation: 1
+  animations:
+    legacyGenerateAnimations: 4
+    bakeSimulation: 0
+    resampleCurves: 1
+    optimizeGameObjects: 0
+    motionNodeName: 
+    rigImportErrors: 
+    rigImportWarnings: 
+    animationImportErrors: 
+    animationImportWarnings: 
+    animationRetargetingWarnings: 
+    animationDoRetargetingWarnings: 0
+    importAnimatedCustomProperties: 0
+    importConstraints: 0
+    animationCompression: 1
+    animationRotationError: 0.5
+    animationPositionError: 0.5
+    animationScaleError: 0.5
+    animationWrapMode: 0
+    extraExposedTransformPaths: []
+    extraUserProperties: []
+    clipAnimations: []
+    isReadable: 1
+  meshes:
+    lODScreenPercentages: []
+    globalScale: 1
+    meshCompression: 0
+    addColliders: 0
+    importVisibility: 1
+    importBlendShapes: 1
+    importCameras: 1
+    importLights: 1
+    swapUVChannels: 0
+    generateSecondaryUV: 0
+    useFileUnits: 1
+    optimizeMeshForGPU: 1
+    keepQuads: 0
+    weldVertices: 1
+    preserveHierarchy: 0
+    indexFormat: 0
+    secondaryUVAngleDistortion: 8
+    secondaryUVAreaDistortion: 15.000001
+    secondaryUVHardAngle: 88
+    secondaryUVPackMargin: 4
+    useFileScale: 1
+    previousCalculatedGlobalScale: 0.01
+    hasPreviousCalculatedGlobalScale: 1
+  tangentSpace:
+    normalSmoothAngle: 60
+    normalImportMode: 0
+    tangentImportMode: 3
+    normalCalculationMode: 4
+  importAnimation: 1
+  copyAvatar: 0
+  humanDescription:
+    serializedVersion: 2
+    human: []
+    skeleton: []
+    armTwist: 0.5
+    foreArmTwist: 0.5
+    upperLegTwist: 0.5
+    legTwist: 0.5
+    armStretch: 0.05
+    legStretch: 0.05
+    feetSpacing: 0
+    rootMotionBoneName: 
+    rootMotionBoneRotation: {x: 0, y: 0, z: 0, w: 1}
+    hasTranslationDoF: 0
+    hasExtraRoot: 0
+    skeletonHasParents: 1
+  lastHumanDescriptionAvatarSource: {instanceID: 0}
+  animationType: 2
+  humanoidOversampling: 1
+  additionalBone: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
