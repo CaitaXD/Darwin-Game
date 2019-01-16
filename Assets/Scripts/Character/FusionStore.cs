@@ -5,4 +5,5 @@ using UnityEngine;
 public class FusionStore : MonoBehaviour {
     //Serve apenas para guardar o prefab da fusão de dentro do inimigo
     public GameObject FusionPrefab;
+   public float healAmount = 1;
 }

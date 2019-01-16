@@ -38,6 +38,7 @@ public class DamageScript : MonoBehaviour {
             _playerScript.idleTimer = 0;
         }
     }
+  
 
     void OnTriggerEnter(Collider other)
     {

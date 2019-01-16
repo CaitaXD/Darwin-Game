@@ -20,17 +20,22 @@ public class PlayerInfo : MonoBehaviour
     public bool tutorialRestrictions = false;
     [SerializeField]
     Vector3 Spawn;
+    public float healAmount;
 
     private void Awake()
     {
+      
         //Linha que faz o objeto continuar em todas as fases para salvar a fusão/ vida/ spawn
         DontDestroyOnLoad(this.gameObject);     
         cheknewID = checkID;
         life = 100;
+        
     }
 
     public virtual void FixedUpdate()
-    {   
+    {
+
+
         //Procura o spawn
         if (GameObject.FindGameObjectWithTag("Spawn") != null)
             {
@@ -64,10 +69,11 @@ public class PlayerInfo : MonoBehaviour
         //Se o ID não for igual, o prefab da fusão é guardado
         if (GameObject.FindGameObjectWithTag("Player")!= null && GameObject.FindGameObjectWithTag("Player").GetComponent<fusionScript>().fusionID != checkID)
         {
-
+            
             if (timerSpawn >= 1.2)
             {
                 GameObject.FindGameObjectWithTag("Player").GetComponent<fusionScript>().fusionStore = true;
+                    
                 timerSpawn = 0;
                 activatTimer = false;
             }

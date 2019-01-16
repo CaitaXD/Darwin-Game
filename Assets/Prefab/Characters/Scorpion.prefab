@@ -3130,6 +3130,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   FusionPrefab: {fileID: 1134939379605594, guid: f42d1f43024dafa4d9d2dbc008ae1bb3,
     type: 2}
+  healAmount: 10
 --- !u!114 &114863508913397288
 MonoBehaviour:
   m_ObjectHideFlags: 1

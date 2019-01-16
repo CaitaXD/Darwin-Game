@@ -24,19 +24,22 @@ public class fusionScript : MonoBehaviour
     // Use this for initialization
     private void Awake()
     {
-     
-        isTriggred = false;
-    }
-    void Start()
-    {
-       
         Info = GameObject.FindGameObjectWithTag("Info").GetComponent<PlayerInfo>();
         Info.activatTimer = true;
-        _playerScript = GetComponent<PlayerScript>();
         animPlayer = GetComponentInChildren<Animator>();
         FusionGet = GetComponent<GameObject>();
+        _playerScript = GetComponent<PlayerScript>();
+       
+        isTriggred = false;
     }
 
+    private void Start()
+    {
+        if (_playerScript.hitPoints <= 100)
+        {
+            _playerScript.hitPoints += Info.healAmount;
+        }
+    }
     // Update is called once per frame
     void Update()
     {
@@ -96,6 +99,8 @@ public class fusionScript : MonoBehaviour
             {
                 animPlayer.SetTrigger("fusion");
                 _fusionStore = collider.GetComponent<FusionStore>();
+               
+                Info.healAmount = _fusionStore.healAmount;
                 FusionGet = _fusionStore.FusionPrefab;
                 GameObject.Destroy(collider.gameObject);
                 if (collider.GetComponent<EnemyScript>() != null)
