@@ -20,6 +20,9 @@ public class fusionScript : MonoBehaviour
     public GameObject currentFusion;
     public GameObject Spawn;
     PlayerInfo Info;
+    [SerializeField]
+   
+    
 
     // Use this for initialization
     private void Awake()
@@ -29,6 +32,8 @@ public class fusionScript : MonoBehaviour
         animPlayer = GetComponentInChildren<Animator>();
         FusionGet = GetComponent<GameObject>();
         _playerScript = GetComponent<PlayerScript>();
+
+
        
         isTriggred = false;
     }
@@ -38,6 +43,10 @@ public class fusionScript : MonoBehaviour
         if (_playerScript.hitPoints <= 100)
         {
             _playerScript.hitPoints += Info.healAmount;
+            if (Info.healAmount > 0) 
+            Info.healAmount = 0;
+            
+          
         }
     }
     // Update is called once per frame

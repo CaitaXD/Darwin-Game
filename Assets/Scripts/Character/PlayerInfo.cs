@@ -21,6 +21,7 @@ public class PlayerInfo : MonoBehaviour
     [SerializeField]
     Vector3 Spawn;
     public float healAmount;
+    AudioSource HealSound;
 
     private void Awake()
     {
@@ -30,6 +31,13 @@ public class PlayerInfo : MonoBehaviour
         cheknewID = checkID;
         life = 100;
         
+    }
+    private void Start()
+    {
+        if (cheknewID != checkID)
+        {
+            HealSound.Play();
+        }
     }
 
     public virtual void FixedUpdate()
