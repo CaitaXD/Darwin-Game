@@ -7,6 +7,8 @@ public class HpBar : MonoBehaviour {
 
     public Image hpBar;
     Color verdeLindo = new Color();
+    [SerializeField]
+    float lerpSpeed = 12;
     // Use this for initialization
     void Start ()
     {
@@ -16,10 +18,8 @@ public class HpBar : MonoBehaviour {
 	// Update is called once per frame
 	void FixedUpdate ()
     {
-        if (hpBar.fillAmount != GameObject.FindGameObjectWithTag("Player").GetComponent<PlayerScript>().hitPoints)
-        {
-            hpBar.fillAmount = GameObject.FindGameObjectWithTag("Player").GetComponent<PlayerScript>().hitPoints / 100;
-        }
+        hpBar.fillAmount = Mathf.Lerp(hpBar.fillAmount, GameObject.FindGameObjectWithTag("Player").GetComponent<PlayerScript>().hitPoints / 100, Time.deltaTime * lerpSpeed);
+    
         ColorUtility.TryParseHtmlString("#32CD32", out verdeLindo);
         if (hpBar.fillAmount >= 0.6f)
         {

@@ -11104,6 +11104,11 @@ Prefab:
       propertyPath: m_RootOrder
       value: 40
       objectReference: {fileID: 0}
+    - target: {fileID: 114148661555347458, guid: 643bf138ad253d14bac8135fd7fc7ff4,
+        type: 2}
+      propertyPath: TabButton
+      value: 
+      objectReference: {fileID: 1161851035}
     - target: {fileID: 114533469804278050, guid: 643bf138ad253d14bac8135fd7fc7ff4,
         type: 2}
       propertyPath: Waypoint1
@@ -11114,11 +11119,6 @@ Prefab:
       propertyPath: Waypoint2
       value: 
       objectReference: {fileID: 117688157}
-    - target: {fileID: 114148661555347458, guid: 643bf138ad253d14bac8135fd7fc7ff4,
-        type: 2}
-      propertyPath: TabButton
-      value: 
-      objectReference: {fileID: 1161851035}
     - target: {fileID: 1830379150896398, guid: 643bf138ad253d14bac8135fd7fc7ff4, type: 2}
       propertyPath: m_Name
       value: Scorpion (1)
@@ -27403,6 +27403,7 @@ MonoBehaviour:
   number: 0
   tutorialRestrictions: 0
   Spawn: {x: 0, y: 0, z: 0}
+  healAmount: 0
 --- !u!4 &1412541396
 Transform:
   m_ObjectHideFlags: 0
@@ -33426,6 +33427,11 @@ Prefab:
     - target: {fileID: 4549873435622754, guid: e6f53ca860d628547885bcada9f2711a, type: 2}
       propertyPath: m_RootOrder
       value: 9
+      objectReference: {fileID: 0}
+    - target: {fileID: 114103684667363446, guid: e6f53ca860d628547885bcada9f2711a,
+        type: 2}
+      propertyPath: HealingDarwin
+      value: 
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: e6f53ca860d628547885bcada9f2711a, type: 2}
