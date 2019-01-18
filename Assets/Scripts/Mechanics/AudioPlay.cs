@@ -11,7 +11,7 @@ public class AudioPlay : MonoBehaviour {
     public AudioSource Bite;
     public AudioSource BatHit;
     public AudioSource BatFlap;
-    public AudioSource healingsound;
+    
 
     void HardenPlay()
     {
@@ -41,8 +41,5 @@ public class AudioPlay : MonoBehaviour {
     {
         BatFlap.Play();
     }
-    void healingSound()
-    {
-        healingsound.Play();
-    }
+  
 }

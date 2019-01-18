@@ -21,25 +21,18 @@ public class PlayerInfo : MonoBehaviour
     [SerializeField]
     Vector3 Spawn;
     public float healAmount;
+    [SerializeField]
     AudioSource HealSound;
 
     private void Awake()
     {
-      
         //Linha que faz o objeto continuar em todas as fases para salvar a fusão/ vida/ spawn
         DontDestroyOnLoad(this.gameObject);     
         cheknewID = checkID;
         life = 100;
         
     }
-    private void Start()
-    {
-        if (cheknewID != checkID)
-        {
-            HealSound.Play();
-        }
-    }
-
+  
     public virtual void FixedUpdate()
     {
 
@@ -52,6 +45,7 @@ public class PlayerInfo : MonoBehaviour
         //Método que faz o ''New Fusion'' aparecer na tela e adiciona a fusão no menu fusions
         if (cheknewID != checkID)
         {
+            HealSound.Play();
             cheknewID = checkID;
             if (!id.Contains(checkID))
             {
