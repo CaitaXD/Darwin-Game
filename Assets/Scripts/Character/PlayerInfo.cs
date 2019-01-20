@@ -45,7 +45,6 @@ public class PlayerInfo : MonoBehaviour
         //Método que faz o ''New Fusion'' aparecer na tela e adiciona a fusão no menu fusions
         if (cheknewID != checkID)
         {
-            HealSound.Play();
             cheknewID = checkID;
             if (!id.Contains(checkID))
             {
@@ -84,6 +83,8 @@ public class PlayerInfo : MonoBehaviour
         else if (GameObject.FindGameObjectWithTag("Player") == null)
         {
             Instantiate(currentFusion, Spawn, new Quaternion(0, 0, 0, 0));
+            HealSound.Play();
+
         }
 
     }

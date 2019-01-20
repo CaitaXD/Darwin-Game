@@ -1322,19 +1322,16 @@ MonoBehaviour:
   m_GameObject: {fileID: 723339191}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 1980459831, guid: f70555f144d8491a825f0804e09c671c, type: 3}
+  m_Script: {fileID: 11500000, guid: b0cedec9b234f0d49af7ada3ef46d1ee, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  m_UiScaleMode: 0
-  m_ReferencePixelsPerUnit: 100
-  m_ScaleFactor: 1
-  m_ReferenceResolution: {x: 800, y: 600}
-  m_ScreenMatchMode: 0
-  m_MatchWidthOrHeight: 0
-  m_PhysicalUnit: 3
-  m_FallbackScreenDPI: 96
-  m_DefaultSpriteDPI: 96
-  m_DynamicPixelsPerUnit: 1
+  cicleAtSlotX: 3
+  selectionIs: 0
+  anim: {fileID: 1369328915}
+  animSlot1: OptionsSelection1
+  animSlot2: 
+  animSlot3: 
+  animSlot4: 
 --- !u!223 &723339197
 Canvas:
   m_ObjectHideFlags: 0
