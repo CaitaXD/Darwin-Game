@@ -20,8 +20,7 @@ public class SelectionMasterScript : MonoBehaviour {
     float y1, y2, y3, y4, y5;
     float arrowY;
     [SerializeField]
-    protected GameObject window1,window2,window3,window4,window5;
-    protected bool stopNavegation;
+   protected SelectionMasterScript iD1;
 	// Use this for initialization
 	void Start () {
         arrowY = selectionArrow.position.y;
@@ -34,8 +33,6 @@ public class SelectionMasterScript : MonoBehaviour {
 	
 	// Update is called once per frame
 	void Update () {
-        if (!stopNavegation)
-        {
             if (selectionIs > cicleAtSlotX)
             {
                 selectionIs = 1;
@@ -47,15 +44,15 @@ public class SelectionMasterScript : MonoBehaviour {
             if (Input.GetKeyDown(KeyCode.S))
             {
                 selectionIs += 1;
-                menuAudio.PlayOneShot(selectionSound, 0.1f);
+                menuAudio.PlayOneShot(selectionSound);
             }
             if (Input.GetKeyDown(KeyCode.W))
             {
                 selectionIs -= 1;
-                menuAudio.PlayOneShot(selectionSound, 0.1f);
+                menuAudio.PlayOneShot(selectionSound);
                 menuAudio.Play();
             }
-        }
+        
         switch (selectionIs)
         {
             case 1:  
