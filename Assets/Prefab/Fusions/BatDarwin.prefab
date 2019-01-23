@@ -734,6 +734,7 @@ GameObject:
   - component: {fileID: 135860222447176390}
   - component: {fileID: 135043625321626762}
   - component: {fileID: 82655473255240966}
+  - component: {fileID: 81827126504615166}
   m_Layer: 0
   m_Name: BatDarwin
   m_TagString: Player
@@ -2520,6 +2521,13 @@ Rigidbody:
   m_Interpolate: 0
   m_Constraints: 120
   m_CollisionDetection: 0
+--- !u!81 &81827126504615166
+AudioListener:
+  m_ObjectHideFlags: 1
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1574923204766654}
+  m_Enabled: 1
 --- !u!82 &82390002257859342
 AudioSource:
   m_ObjectHideFlags: 1

@@ -300,6 +300,7 @@ GameObject:
   - component: {fileID: 135791775753968244}
   - component: {fileID: 114625068417421834}
   - component: {fileID: 135645024598097068}
+  - component: {fileID: 81625223537866272}
   m_Layer: 0
   m_Name: Darwinpion
   m_TagString: Player
@@ -2483,6 +2484,13 @@ Rigidbody:
   m_Interpolate: 0
   m_Constraints: 120
   m_CollisionDetection: 0
+--- !u!81 &81625223537866272
+AudioListener:
+  m_ObjectHideFlags: 1
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1134939379605594}
+  m_Enabled: 1
 --- !u!82 &82365020506840586
 AudioSource:
   m_ObjectHideFlags: 1

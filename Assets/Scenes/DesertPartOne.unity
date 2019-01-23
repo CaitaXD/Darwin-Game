@@ -11228,11 +11228,6 @@ Prefab:
       propertyPath: m_RootOrder
       value: 40
       objectReference: {fileID: 0}
-    - target: {fileID: 114148661555347458, guid: 643bf138ad253d14bac8135fd7fc7ff4,
-        type: 2}
-      propertyPath: TabButton
-      value: 
-      objectReference: {fileID: 1161851035}
     - target: {fileID: 114533469804278050, guid: 643bf138ad253d14bac8135fd7fc7ff4,
         type: 2}
       propertyPath: Waypoint1
@@ -11243,6 +11238,11 @@ Prefab:
       propertyPath: Waypoint2
       value: 
       objectReference: {fileID: 117688157}
+    - target: {fileID: 114148661555347458, guid: 643bf138ad253d14bac8135fd7fc7ff4,
+        type: 2}
+      propertyPath: TabButton
+      value: 
+      objectReference: {fileID: 1161851035}
     - target: {fileID: 1830379150896398, guid: 643bf138ad253d14bac8135fd7fc7ff4, type: 2}
       propertyPath: m_Name
       value: Scorpion (1)
@@ -12606,11 +12606,6 @@ Prefab:
       propertyPath: m_RootOrder
       value: 3
       objectReference: {fileID: 0}
-    - target: {fileID: 114148661555347458, guid: 643bf138ad253d14bac8135fd7fc7ff4,
-        type: 2}
-      propertyPath: TabButton
-      value: 
-      objectReference: {fileID: 1161851035}
     - target: {fileID: 114533469804278050, guid: 643bf138ad253d14bac8135fd7fc7ff4,
         type: 2}
       propertyPath: Waypoint1
@@ -12621,10 +12616,11 @@ Prefab:
       propertyPath: Waypoint2
       value: 
       objectReference: {fileID: 47203042}
-    - target: {fileID: 0}
-      propertyPath: m_IsActive
-      value: 0
-      objectReference: {fileID: 0}
+    - target: {fileID: 114148661555347458, guid: 643bf138ad253d14bac8135fd7fc7ff4,
+        type: 2}
+      propertyPath: TabButton
+      value: 
+      objectReference: {fileID: 1161851035}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 643bf138ad253d14bac8135fd7fc7ff4, type: 2}
   m_IsPrefabAsset: 0
@@ -27727,6 +27723,18 @@ Transform:
   m_Father: {fileID: 1412541396}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1 &1416984652 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 1121659248654072, guid: e6f53ca860d628547885bcada9f2711a,
+    type: 2}
+  m_PrefabInternal: {fileID: 2001268269}
+--- !u!81 &1416984659
+AudioListener:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1416984652}
+  m_Enabled: 1
 --- !u!1 &1418384347
 GameObject:
   m_ObjectHideFlags: 0
@@ -32847,7 +32855,6 @@ GameObject:
   m_Component:
   - component: {fileID: 1967236231}
   - component: {fileID: 1967236230}
-  - component: {fileID: 1967236229}
   - component: {fileID: 1967236232}
   - component: {fileID: 1967236233}
   m_Layer: 0
@@ -32857,13 +32864,6 @@ GameObject:
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
---- !u!81 &1967236229
-AudioListener:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 0}
-  m_GameObject: {fileID: 1967236228}
-  m_Enabled: 1
 --- !u!20 &1967236230
 Camera:
   m_ObjectHideFlags: 0
