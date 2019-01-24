@@ -7,7 +7,12 @@ public class OptionsWindowScript : SelectionMasterScript {
     [SerializeField]
     Text text1,text2,text3,text4;
     string option  = "Menu";
-
+    PlayerInfo _info;
+    protected override void Update()
+    {
+        base.Update();
+        _info = GameObject.FindGameObjectWithTag("Info").GetComponent<PlayerInfo>();
+    }
     protected override void case1()
     {
       switch (option)
@@ -33,7 +38,17 @@ public class OptionsWindowScript : SelectionMasterScript {
 
 
             case ("Audio"):
+          
+               
+                if (Input.GetKeyDown(KeyCode.A))
+                {
+                    _info.volume -= 0.1f;
 
+                }
+               else  if (Input.GetKeyDown(KeyCode.D))
+                {
+                    _info.volume += 0.1f;
+                }
 
                 break;
         }

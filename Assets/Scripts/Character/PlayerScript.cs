@@ -51,6 +51,8 @@ public class PlayerScript : Character {
     }
     public override void FixedUpdate()
     {
+        AudioListener.volume = _playerInfo.volume;
+        
         if(quickEnded)
         {
             timerQuick += Time.deltaTime;

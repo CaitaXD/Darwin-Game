@@ -32,7 +32,7 @@ public class SelectionMasterScript : MonoBehaviour {
 	}
 	
 	// Update is called once per frame
-	void Update () {
+	virtual protected void Update () {
             if (selectionIs > cicleAtSlotX)
             {
                 selectionIs = 1;
