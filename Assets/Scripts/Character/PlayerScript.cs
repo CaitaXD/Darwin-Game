@@ -141,7 +141,7 @@ public class PlayerScript : Character {
             if (SceneManager.sceneCount == 1 && Input.GetKeyUp(KeyCode.Escape) && _playerInfo.tutorialRestrictions == false)
             {
                 SceneManager.LoadScene("Menu", LoadSceneMode.Additive);
-                //Time.timeScale = 0;
+                Time.timeScale = 0;
             }
             //Confere se o player está na areia movediça
             if (QuickSand == false)

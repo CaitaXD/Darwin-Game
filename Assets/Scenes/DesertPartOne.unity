@@ -32028,6 +32028,7 @@ MonoBehaviour:
   Spawn: {x: 0, y: 0, z: 0}
   healAmount: 0
   HealSound: {fileID: 92087271}
+  volume: 1
 --- !u!4 &1412541396
 Transform:
   m_ObjectHideFlags: 0
@@ -32226,18 +32227,6 @@ Transform:
   m_Father: {fileID: 1412541396}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!1 &1416984652 stripped
-GameObject:
-  m_CorrespondingSourceObject: {fileID: 1121659248654072, guid: e6f53ca860d628547885bcada9f2711a,
-    type: 2}
-  m_PrefabInternal: {fileID: 2001268269}
---- !u!81 &1416984659
-AudioListener:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 0}
-  m_GameObject: {fileID: 1416984652}
-  m_Enabled: 1
 --- !u!1 &1418384347
 GameObject:
   m_ObjectHideFlags: 0
@@ -38091,6 +38080,18 @@ Transform:
   m_Father: {fileID: 547254544}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1 &1938230305 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 1121659248654072, guid: e6f53ca860d628547885bcada9f2711a,
+    type: 2}
+  m_PrefabInternal: {fileID: 2001268269}
+--- !u!81 &1938230306
+AudioListener:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1938230305}
+  m_Enabled: 1
 --- !u!1 &1939662730
 GameObject:
   m_ObjectHideFlags: 0

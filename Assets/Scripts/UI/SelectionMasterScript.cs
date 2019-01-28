@@ -52,44 +52,46 @@ public class SelectionMasterScript : MonoBehaviour {
                 menuAudio.PlayOneShot(selectionSound);
                 menuAudio.Play();
             }
-        
-        switch (selectionIs)
+
+        if (selectionArrow != null)
         {
-            case 1:  
-                arrowY = Mathf.Lerp(arrowY, y1, Time.deltaTime * lerpSpeed);
-                selectionArrow.position = new Vector3(selectionArrow.position.x, arrowY,0);
+            switch (selectionIs)
+            {
+                case 1:
+                    arrowY = Mathf.Lerp(arrowY, y1, Time.deltaTime * lerpSpeed);
+                    selectionArrow.position = new Vector3(selectionArrow.position.x, arrowY, 0);
 
-                case1();
+                    case1();
 
-                break;
-            case 2:
-                arrowY = Mathf.Lerp(arrowY, y2, Time.deltaTime * lerpSpeed);
-                selectionArrow.position = new Vector3(selectionArrow.position.x, arrowY,0);
-                
+                    break;
+                case 2:
+                    arrowY = Mathf.Lerp(arrowY, y2, Time.deltaTime * lerpSpeed);
+                    selectionArrow.position = new Vector3(selectionArrow.position.x, arrowY, 0);
+
                     case2();
-                
-                break;
-            case 3:
-                arrowY = Mathf.Lerp(arrowY, y3, Time.deltaTime * lerpSpeed);
-                selectionArrow.position = new Vector3(selectionArrow.position.x, arrowY,0);
-                
-                    case3(); 
-                
-                break;
-            case 4:
-                arrowY = Mathf.Lerp(arrowY, y4, Time.deltaTime * lerpSpeed);
-                selectionArrow.position = new Vector3(selectionArrow.position.x, arrowY,0);
-               
+
+                    break;
+                case 3:
+                    arrowY = Mathf.Lerp(arrowY, y3, Time.deltaTime * lerpSpeed);
+                    selectionArrow.position = new Vector3(selectionArrow.position.x, arrowY, 0);
+
+                    case3();
+
+                    break;
+                case 4:
+                    arrowY = Mathf.Lerp(arrowY, y4, Time.deltaTime * lerpSpeed);
+                    selectionArrow.position = new Vector3(selectionArrow.position.x, arrowY, 0);
+
                     case4();
-                
-                break;
-            case 5:
-                arrowY = Mathf.Lerp(arrowY, y5, Time.deltaTime * lerpSpeed);
-                selectionArrow.position = new Vector3(selectionArrow.position.x, arrowY,0);
-                
-                break;
-        }
-        
+
+                    break;
+                case 5:
+                    arrowY = Mathf.Lerp(arrowY, y5, Time.deltaTime * lerpSpeed);
+                    selectionArrow.position = new Vector3(selectionArrow.position.x, arrowY, 0);
+
+                    break;
+            }
+        }        
 
 
 	}

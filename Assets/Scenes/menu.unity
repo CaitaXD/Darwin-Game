@@ -2333,6 +2333,13 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   anim: {fileID: 1369328915}
+  slot1: {fileID: 264007238}
+  slot2: {fileID: 301134608}
+  slot3: {fileID: 420056265}
+  Options: {fileID: 21300000, guid: 0307b51a8e39cea40903af2eb1b2a04e, type: 3}
+  Fusions: {fileID: 21300000, guid: 311813a2d73d1094ea081af05d9710c5, type: 3}
+  Resume: {fileID: 21300000, guid: ac967a004c7849847a7056abb9d64592, type: 3}
+  Exit: {fileID: 21300000, guid: ffaa29e097d803f46afade7ca934bad6, type: 3}
 --- !u!1 &1479303507
 GameObject:
   m_ObjectHideFlags: 0
