@@ -11,7 +11,10 @@ public class HelixScript : MonoBehaviour {
     Image slot1, slot2, slot3;
     [SerializeField]
    Sprite Options, Fusions, Resume, Exit;
+    [SerializeField]
     int selectionIs = 1;
+    [SerializeField]
+    int menuHierachy =0;
 
 	// Use this for initialization
 	void Start () {
@@ -21,6 +24,11 @@ public class HelixScript : MonoBehaviour {
 	
 	// Update is called once per frame
 	void  Update () {
+        if (Input.GetKeyDown(KeyCode.Escape))
+        {
+            anim.SetTrigger("Unselect");
+        }
+
         if (selectionIs > 4)
         {
             selectionIs = 1;
@@ -32,23 +40,43 @@ public class HelixScript : MonoBehaviour {
         switch (selectionIs)
         {
             case 1:
+                if (Input.GetKeyDown(KeyCode.Return))
+                {
+                    menuHierachy += 1;
+                    anim.SetTrigger("fusions");
+                }
                 slot1.sprite = Resume;
                 slot3.sprite = Fusions;
                 slot2.sprite = Options;  
                 break;
 
             case 2:
+           
                 slot1.sprite = Exit;
                 slot3.sprite = Resume;
                 slot2.sprite = Fusions;
                 break;
             case 3:
+                if (Input.GetKeyDown(KeyCode.Return))
+                {
+                    menuHierachy += 1;
+                    Time.timeScale = 1;
+                    Destroy(GameObject.FindGameObjectWithTag("Info"));
+                    SceneManager.LoadScene("Menu Inicial");
+                 
+                }
                 slot1.sprite = Options;
                 slot3.sprite = Exit;
                 slot2.sprite = Resume;
                 break;
 
             case 4:
+                if (Input.GetKeyDown(KeyCode.Return))
+                {
+                    menuHierachy += 1;
+                    anim.SetTrigger("options");
+                }
+
                 slot1.sprite = Fusions;
                 slot3.sprite = Options;
                 slot2.sprite = Exit;
@@ -69,8 +97,14 @@ public class HelixScript : MonoBehaviour {
         }
         if (Input.GetKeyUp(KeyCode.Escape))
         {
-            Time.timeScale = 1;
-            SceneManager.UnloadSceneAsync("menu");
+            if (menuHierachy == 0)
+            {
+                Time.timeScale = 1;
+                SceneManager.UnloadSceneAsync("menu");
+               
+            }
+            menuHierachy -= 1;
+          
         }
     
     }
