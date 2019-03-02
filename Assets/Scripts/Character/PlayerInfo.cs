@@ -23,7 +23,8 @@ public class PlayerInfo : MonoBehaviour
     public float healAmount;
     [SerializeField]
     AudioSource HealSound;
-    public float volume; 
+   
+    
 
     private void Awake()
     {

@@ -13,8 +13,7 @@ public class HelixScript : MonoBehaviour {
    Sprite Options, Fusions, Resume, Exit;
     [SerializeField]
     int selectionIs = 1;
-    [SerializeField]
-    int menuHierachy = 0;
+   public int menuHierachy = 0;
     int previusSelection;
 
 	// Use this for initialization
@@ -25,7 +24,7 @@ public class HelixScript : MonoBehaviour {
 	
 	// Update is called once per frame
 	void  Update () {
-        if (Input.GetKeyDown(KeyCode.Escape))
+        if (Input.GetKeyDown(KeyCode.Escape) && menuHierachy == 1)
         {
             anim.SetTrigger("Unselect");
         }
@@ -118,11 +117,14 @@ public class HelixScript : MonoBehaviour {
                 SceneManager.UnloadSceneAsync("menu");
                
             }
-            if (menuHierachy == 1)
+            if (menuHierachy >= 1)
             {
                 selectionIs = previusSelection;
             }
+            if (menuHierachy != 0)
+            {
                 menuHierachy -= 1;
+            }
           
         }
     

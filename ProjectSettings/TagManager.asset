@@ -29,6 +29,7 @@ TagManager:
   - StopParallax
   - ENDDEMO
   - Estalactite
+  - SceneSound
   layers:
   - Default
   - TransparentFX
