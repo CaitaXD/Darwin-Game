@@ -22,13 +22,15 @@ public class SelectionMasterScript : MonoBehaviour {
     [SerializeField]
    protected SelectionMasterScript iD1;
 	// Use this for initialization
-	void Start () {
+	virtual protected void Start () {
         arrowY = selectionArrow.position.y;
         y1 = slot1.position.y;
         y2 = slot2.position.y;
         y3 = slot3.position.y;
         y4 = slot4.position.y;
+        if( slot5 !=null)
         y5 = slot5.position.y;
+
 	}
 	
 	// Update is called once per frame

@@ -41,6 +41,11 @@ QualitySettings:
     resolutionScalingFixedDPIFactor: 1
     excludedTargetPlatforms:
     - Standalone
+    - iPhone
+    - tvOS
+    - Android
+    - Windows Store Apps
+    - WebGL
   - serializedVersion: 2
     name: Low
     pixelLightCount: 7
@@ -178,6 +183,11 @@ QualitySettings:
     resolutionScalingFixedDPIFactor: 1
     excludedTargetPlatforms:
     - Standalone
+    - iPhone
+    - tvOS
+    - Android
+    - Windows Store Apps
+    - WebGL
   - serializedVersion: 2
     name: Ultra
     pixelLightCount: 12
@@ -213,4 +223,9 @@ QualitySettings:
     resolutionScalingFixedDPIFactor: 1
     excludedTargetPlatforms: []
   m_PerPlatformDefaultQuality:
-    Standalone: 0
+    Android: 1
+    Standalone: 5
+    WebGL: 1
+    Windows Store Apps: 1
+    iPhone: 1
+    tvOS: 1

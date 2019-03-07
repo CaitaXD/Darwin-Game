@@ -2,7 +2,7 @@
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
-
+using System.Linq;
 public class OptionsWindowScript : SelectionMasterScript {
     [SerializeField]
     Text text1,text2,text3,text4;
@@ -17,14 +17,22 @@ public class OptionsWindowScript : SelectionMasterScript {
     AudioSource sceneMusic;
     AudioSource effects;
     string[] names;
-  
+    int i= 0;
+    bool correctRes = false;
 
-  
+    protected virtual void Start()
+    {
+        base.Start();
+        
+        names = QualitySettings.names;
+       
+        
+    }
+
     protected override void Update()
     {
-        names = QualitySettings.names;
+ 
         base.Update();
-        Debug.Log(QualitySettings.GetQualityLevel());
         if (GameObject.FindGameObjectWithTag("Player") != null)
         {
             effects = GameObject.FindGameObjectWithTag("Player").GetComponentInChildren<AudioSource>();
@@ -40,8 +48,8 @@ public class OptionsWindowScript : SelectionMasterScript {
       switch (option)
         {
             case ("Resolution"):
-                
-            break;
+                ResolutionMethod();
+                break;
             case ("Menu"):
                 slideBar.gameObject.SetActive(false);
                 if (Input.GetKeyDown(KeyCode.Return))
@@ -138,9 +146,9 @@ public class OptionsWindowScript : SelectionMasterScript {
         switch (option)
         {
             case ("Resolution"):
-
+                ResolutionMethod();
                 break;
-            case ("Viedeo"):
+            case ("Video"):
                 if (Input.GetKeyDown(KeyCode.Return))
                 {
                     if (_helixScript != null)
@@ -148,7 +156,7 @@ public class OptionsWindowScript : SelectionMasterScript {
                         _helixScript.menuHierachy += 1;
                     }
                     option = "Resolution";
-                    text1.text = Screen.currentResolution.ToString();
+                    text1.text = "";
                     text2.text = "";
                     text3.text = "";
                     text4.text = "";
@@ -242,6 +250,9 @@ public class OptionsWindowScript : SelectionMasterScript {
     {
         switch (option)
         {
+            case ("Resolution"):
+                ResolutionMethod();
+                break;
             case ("Graphics"):
                 if (Input.GetKeyDown(KeyCode.Escape) && _helixScript.menuHierachy == 3)
                 {
@@ -311,6 +322,9 @@ public class OptionsWindowScript : SelectionMasterScript {
     {
         switch (option)
         {
+            case ("Resolution"):
+                ResolutionMethod();
+                break;
             case ("Graphics"):
                 if (Input.GetKeyDown(KeyCode.Escape) && _helixScript.menuHierachy == 3)
                 {
@@ -357,6 +371,9 @@ public class OptionsWindowScript : SelectionMasterScript {
     {
         switch (option)
         {
+            case ("Resolution"):
+                ResolutionMethod();
+                break;
             case ("Menu"):
                 slideBar.gameObject.SetActive(false);
                 break;
@@ -372,5 +389,42 @@ public class OptionsWindowScript : SelectionMasterScript {
         }
     }
 
+    void ResolutionMethod ()
+    {
+     
+        var res = Screen.resolutions.Where(resolution => resolution.refreshRate >= 60);
+        Resolution[] resolutions = res.ToArray();
+        print(resolutions.Length);
+        if (correctRes == false)
+        {
+            for (i = 0; i < resolutions.Length; i++)
+            {
+                text1.text = resolutions[i].width.ToString() + "x" + resolutions[i].height.ToString();
+                text2.text = i.ToString();
+                if (text1.text == Screen.width.ToString() + "x" + Screen.height.ToString())
+                {
+                    correctRes = true;
+                    break;
 
+                }
+            }
+        }
+        if(Input.GetKeyDown(KeyCode.D))
+            {
+            if (i< resolutions.Length) i++;
+            Screen.SetResolution(resolutions[i].width,resolutions[i].height,true);
+            text1.text = resolutions[i].width.ToString() + "x" + resolutions[i].height.ToString();
+            text2.text = i.ToString();
+
+        }
+        else if (Input.GetKeyDown(KeyCode.A))
+            {
+            if (i > 0) i--;
+            Screen.SetResolution(resolutions[i].width,resolutions[i].height, true);
+            text1.text = resolutions[i].width.ToString() + "x" + resolutions[i].height.ToString();
+            text2.text = i.ToString();
+
+        }
+
+    }
 }
