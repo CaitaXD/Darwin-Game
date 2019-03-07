@@ -1586,7 +1586,7 @@ MonoBehaviour:
   mastervolumeImg: {fileID: 1676582166}
   musicVolumeImg: {fileID: 355538130}
   effectsImg: {fileID: 856739461}
-  _helixScript: {fileID: 0}
+  _helixScript: {fileID: 1369328917}
 --- !u!223 &723339197
 Canvas:
   m_ObjectHideFlags: 0

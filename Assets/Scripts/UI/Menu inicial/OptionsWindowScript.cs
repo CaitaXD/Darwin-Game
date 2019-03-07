@@ -16,13 +16,15 @@ public class OptionsWindowScript : SelectionMasterScript {
     HelixScript _helixScript;
     AudioSource sceneMusic;
     AudioSource effects;
-    
+    string[] names;
+  
 
   
     protected override void Update()
     {
-        
+        names = QualitySettings.names;
         base.Update();
+        Debug.Log(QualitySettings.GetQualityLevel());
         if (GameObject.FindGameObjectWithTag("Player") != null)
         {
             effects = GameObject.FindGameObjectWithTag("Player").GetComponentInChildren<AudioSource>();
@@ -37,6 +39,9 @@ public class OptionsWindowScript : SelectionMasterScript {
     {
       switch (option)
         {
+            case ("Resolution"):
+                
+            break;
             case ("Menu"):
                 slideBar.gameObject.SetActive(false);
                 if (Input.GetKeyDown(KeyCode.Return))
@@ -59,7 +64,36 @@ public class OptionsWindowScript : SelectionMasterScript {
                 }
                     break;
             case ("Video"):
-             
+                if (Input.GetKeyDown(KeyCode.Return))
+                {
+                    if (_helixScript != null)
+                    {
+                        _helixScript.menuHierachy += 1;
+                    }
+                    option = "Graphics";
+                    text1.text = names[0];
+                    text2.text = names [1];
+                    text3.text = names [2];
+                    text4.text = names[3];
+                }
+                break;
+            case ("Graphics"):
+                if (Input.GetKeyDown(KeyCode.Return))
+                {
+                    if (_helixScript != null)
+                    {
+                        _helixScript.menuHierachy += 1;
+                    }
+                    QualitySettings.SetQualityLevel(0);
+                }
+                if (Input.GetKeyDown(KeyCode.Escape) && _helixScript.menuHierachy == 3)
+                {
+                    option = "Video";
+                    text1.text = "Graphics";
+                    text2.text = "Resolution";
+                    text3.text = "Shadows";
+                    text4.text = " ";
+                }
                 break;
 
 
@@ -87,7 +121,7 @@ public class OptionsWindowScript : SelectionMasterScript {
 
                 break;
         }
-        if (Input.GetKeyDown(KeyCode.Escape) && option != "Menu")
+        if (Input.GetKeyDown(KeyCode.Escape) && _helixScript.menuHierachy == 2)
         {
           
             option = "Menu";
@@ -103,6 +137,24 @@ public class OptionsWindowScript : SelectionMasterScript {
     {
         switch (option)
         {
+            case ("Resolution"):
+
+                break;
+            case ("Viedeo"):
+                if (Input.GetKeyDown(KeyCode.Return))
+                {
+                    if (_helixScript != null)
+                    {
+                        _helixScript.menuHierachy += 1;
+                    }
+                    option = "Resolution";
+                    text1.text = Screen.currentResolution.ToString();
+                    text2.text = "";
+                    text3.text = "";
+                    text4.text = "";
+
+                }
+                break;
             case ("Menu"):
                 slideBar.gameObject.SetActive(false);
                 if (Input.GetKeyDown(KeyCode.Return))
@@ -123,6 +175,32 @@ public class OptionsWindowScript : SelectionMasterScript {
                     
                     iD1.enabled = true;
                     gameObject.SetActive(false);
+                }
+                break;
+            case ("Graphics"):
+                if (Input.GetKeyDown(KeyCode.Escape) && _helixScript.menuHierachy == 3)
+                {
+                    option = "Video";
+                    text1.text = "Graphics";
+                    text2.text = "Resolution";
+                    text3.text = "Shadows";
+                    text4.text = " ";
+                }
+                if (Input.GetKeyDown(KeyCode.Escape) && _helixScript.menuHierachy == 3)
+                {
+                    option = "Video";
+                    text1.text = "Graphics";
+                    text2.text = "Resolution";
+                    text3.text = "Shadows";
+                    text4.text = " ";
+                }
+                if (Input.GetKeyDown(KeyCode.Return))
+                {
+                    if (_helixScript != null)
+                    {
+                        _helixScript.menuHierachy += 1;
+                    }
+                    QualitySettings.SetQualityLevel(1);
                 }
                 break;
             case ("Audio"):
@@ -148,7 +226,7 @@ public class OptionsWindowScript : SelectionMasterScript {
                 }
                 break;
         }
-        if (Input.GetKeyDown(KeyCode.Escape) && option != "Menu")
+        if (Input.GetKeyDown(KeyCode.Escape) && _helixScript.menuHierachy <= 2)
         {
             option = "Menu";
             text1.text = "Video";
@@ -164,6 +242,33 @@ public class OptionsWindowScript : SelectionMasterScript {
     {
         switch (option)
         {
+            case ("Graphics"):
+                if (Input.GetKeyDown(KeyCode.Escape) && _helixScript.menuHierachy == 3)
+                {
+                    option = "Video";
+                    text1.text = "Graphics";
+                    text2.text = "Resolution";
+                    text3.text = "Shadows";
+                    text4.text = " ";
+                }
+                if (Input.GetKeyDown(KeyCode.Escape) && _helixScript.menuHierachy == 3)
+                {
+                    option = "Video";
+                    text1.text = "Graphics";
+                    text2.text = "Resolution";
+                    text3.text = "Shadows";
+                    text4.text = " ";
+                }
+
+                if (Input.GetKeyDown(KeyCode.Return))
+                {
+                    if (_helixScript != null)
+                    {
+                        _helixScript.menuHierachy += 1;
+                    }
+                    QualitySettings.SetQualityLevel(2);
+                }
+                break;
             case ("Menu"):
                 slideBar.gameObject.SetActive(false);
                 break;
@@ -192,7 +297,7 @@ public class OptionsWindowScript : SelectionMasterScript {
                 }
                 break;
         }
-                if (Input.GetKeyDown(KeyCode.Escape) && option != "Menu")
+                if (Input.GetKeyDown(KeyCode.Escape) && _helixScript.menuHierachy <= 2)
         {
             
             option = "Menu";
@@ -206,11 +311,39 @@ public class OptionsWindowScript : SelectionMasterScript {
     {
         switch (option)
         {
+            case ("Graphics"):
+                if (Input.GetKeyDown(KeyCode.Escape) && _helixScript.menuHierachy == 3)
+                {
+                    option = "Video";
+                    text1.text = "Graphics";
+                    text2.text = "Resolution";
+                    text3.text = "Shadows";
+                    text4.text = " ";
+                }
+                if (Input.GetKeyDown(KeyCode.Escape) && _helixScript.menuHierachy == 3)
+                {
+                    option = "Video";
+                    text1.text = "Graphics";
+                    text2.text = "Resolution";
+                    text3.text = "Shadows";
+                    text4.text = " ";
+                }
+
+                if (Input.GetKeyDown(KeyCode.Return))
+                {
+                    if (_helixScript != null)
+                    {
+                        _helixScript.menuHierachy += 1;
+                    }
+                    QualitySettings.SetQualityLevel(3);
+                }
+                break;
+
             case ("Menu"):
                 slideBar.gameObject.SetActive(false);
                 break;
         }
-        if (Input.GetKeyDown(KeyCode.Escape) && option != "Menu")
+        if (Input.GetKeyDown(KeyCode.Escape) && _helixScript.menuHierachy <= 2)
         {
           
             option = "Menu";
@@ -228,7 +361,7 @@ public class OptionsWindowScript : SelectionMasterScript {
                 slideBar.gameObject.SetActive(false);
                 break;
         }
-        if (Input.GetKeyDown(KeyCode.Escape) && option != "Menu")
+        if (Input.GetKeyDown(KeyCode.Escape) && _helixScript.menuHierachy <= 2)
         {
             
             option = "Menu";
