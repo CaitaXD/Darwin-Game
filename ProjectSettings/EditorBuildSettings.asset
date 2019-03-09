@@ -5,31 +5,31 @@ EditorBuildSettings:
   m_ObjectHideFlags: 0
   serializedVersion: 2
   m_Scenes:
-  - enabled: 0
+  - enabled: 1
     path: Assets/Scenes/Menu Inicial.unity
     guid: 5f60e5d82966e804d81719ea64717c9b
-  - enabled: 0
+  - enabled: 1
     path: Assets/Scenes/TutorialJumpandFusion.unity
     guid: d3db6555f0d58a64fb7ced6009ead1b6
   - enabled: 1
     path: Assets/Scenes/menu.unity
     guid: 9f9a58cf87ed2084ea80fc123a09547e
-  - enabled: 0
+  - enabled: 1
     path: Assets/Scenes/DesertPartOne.unity
     guid: 3b2eba4cb9b3e3b44aae792a492f9a04
-  - enabled: 0
+  - enabled: 1
     path: Assets/Scenes/DesertPartTwo.unity
     guid: d90fdb641cc61924ca109cbbc7ced797
-  - enabled: 0
+  - enabled: 1
     path: Assets/Scenes/Loading.unity
     guid: 256e51d86e78abb428333263cfc01c31
-  - enabled: 0
+  - enabled: 1
     path: Assets/Scenes/Cave1.unity
     guid: be474c9cb82ca6f498418b0b505d1a32
-  - enabled: 0
+  - enabled: 1
     path: Assets/Scenes/Credits.unity
     guid: 027993c06ee1d1045b92a64028f64335
-  - enabled: 0
+  - enabled: 1
     path: Assets/Scenes/GameOber.unity
     guid: 5b78b433f97256e4993966b3b79b9efd
   m_configObjects: {}
