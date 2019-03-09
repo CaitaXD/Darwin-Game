@@ -30,6 +30,7 @@ TagManager:
   - ENDDEMO
   - Estalactite
   - SceneSound
+  - DamageMechanic
   layers:
   - Default
   - TransparentFX

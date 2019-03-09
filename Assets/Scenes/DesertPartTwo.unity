@@ -4088,6 +4088,7 @@ GameObject:
   - component: {fileID: 244966149}
   - component: {fileID: 244966148}
   - component: {fileID: 244966147}
+  - component: {fileID: 244966150}
   m_Layer: 8
   m_Name: Collider Inclinado
   m_TagString: Quicksand
@@ -4162,6 +4163,17 @@ MeshFilter:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 244966145}
   m_Mesh: {fileID: 10202, guid: 0000000000000000e000000000000000, type: 0}
+--- !u!114 &244966150
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 244966145}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9f141f04086fb48469218659f1c78b2f, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &262998396
 GameObject:
   m_ObjectHideFlags: 0
@@ -30325,6 +30337,7 @@ GameObject:
   - component: {fileID: 1246294872}
   - component: {fileID: 1246294871}
   - component: {fileID: 1246294870}
+  - component: {fileID: 1246294873}
   m_Layer: 8
   m_Name: Collider Inclinado (1)
   m_TagString: Quicksand
@@ -30399,6 +30412,17 @@ MeshFilter:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 1246294868}
   m_Mesh: {fileID: 10202, guid: 0000000000000000e000000000000000, type: 0}
+--- !u!114 &1246294873
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1246294868}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9f141f04086fb48469218659f1c78b2f, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &1258211747
 GameObject:
   m_ObjectHideFlags: 0
@@ -32037,6 +32061,7 @@ GameObject:
   - component: {fileID: 1368795998}
   - component: {fileID: 1368795997}
   - component: {fileID: 1368795996}
+  - component: {fileID: 1368795999}
   m_Layer: 8
   m_Name: Collider Reto (1)
   m_TagString: Quicksand
@@ -32111,6 +32136,17 @@ MeshFilter:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 1368795994}
   m_Mesh: {fileID: 10202, guid: 0000000000000000e000000000000000, type: 0}
+--- !u!114 &1368795999
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1368795994}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9f141f04086fb48469218659f1c78b2f, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &1379991822
 GameObject:
   m_ObjectHideFlags: 0
@@ -50171,6 +50207,7 @@ GameObject:
   - component: {fileID: 1963771190}
   - component: {fileID: 1963771189}
   - component: {fileID: 1963771188}
+  - component: {fileID: 1963771191}
   m_Layer: 8
   m_Name: Collider Reto (2)
   m_TagString: Quicksand
@@ -50245,6 +50282,17 @@ MeshFilter:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 1963771186}
   m_Mesh: {fileID: 10202, guid: 0000000000000000e000000000000000, type: 0}
+--- !u!114 &1963771191
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1963771186}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9f141f04086fb48469218659f1c78b2f, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1001 &1967447521
 Prefab:
   m_ObjectHideFlags: 0
@@ -51073,6 +51121,7 @@ GameObject:
   - component: {fileID: 2042384175}
   - component: {fileID: 2042384174}
   - component: {fileID: 2042384173}
+  - component: {fileID: 2042384176}
   m_Layer: 8
   m_Name: Collider Reto (3)
   m_TagString: Quicksand
@@ -51147,6 +51196,17 @@ MeshFilter:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 2042384171}
   m_Mesh: {fileID: 10202, guid: 0000000000000000e000000000000000, type: 0}
+--- !u!114 &2042384176
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 2042384171}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9f141f04086fb48469218659f1c78b2f, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &2046924797
 GameObject:
   m_ObjectHideFlags: 0
