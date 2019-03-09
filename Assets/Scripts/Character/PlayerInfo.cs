@@ -21,11 +21,6 @@ public class PlayerInfo : MonoBehaviour
     [SerializeField]
     Vector3 Spawn;
     public float healAmount;
-    [SerializeField]
-    AudioSource HealSound;
-   
-    
-
     private void Awake()
     {
         //Linha que faz o objeto continuar em todas as fases para salvar a fusão/ vida/ spawn
@@ -85,8 +80,6 @@ public class PlayerInfo : MonoBehaviour
         else if (GameObject.FindGameObjectWithTag("Player") == null)
         {
             Instantiate(currentFusion, Spawn, new Quaternion(0, 0, 0, 0));
-            HealSound.Play();
-
         }
 
     }

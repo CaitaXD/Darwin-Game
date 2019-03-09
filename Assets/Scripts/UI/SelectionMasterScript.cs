@@ -21,8 +21,9 @@ public class SelectionMasterScript : MonoBehaviour {
     float arrowY;
     [SerializeField]
    protected SelectionMasterScript iD1;
-	// Use this for initialization
-	virtual protected void Start () {
+    AudioReader _audioReader;
+    // Use this for initialization
+    virtual protected void Start () {
         arrowY = selectionArrow.position.y;
         y1 = slot1.position.y;
         y2 = slot2.position.y;
@@ -30,12 +31,18 @@ public class SelectionMasterScript : MonoBehaviour {
         y4 = slot4.position.y;
         if( slot5 !=null)
         y5 = slot5.position.y;
+        if (GameObject.FindGameObjectWithTag("AudioReader") == null) { }
+        else
+        {
+            _audioReader = GameObject.FindGameObjectWithTag("AudioReader").GetComponent<AudioReader>();
+            menuAudio.volume = _audioReader.batlleSounds;
+        }
 
-	}
+    }
 	
 	// Update is called once per frame
 	virtual protected void Update () {
-            if (selectionIs > cicleAtSlotX)
+        if (selectionIs > cicleAtSlotX)
             {
                 selectionIs = 1;
             }
@@ -46,7 +53,7 @@ public class SelectionMasterScript : MonoBehaviour {
             if (Input.GetKeyDown(KeyCode.S))
             {
                 selectionIs += 1;
-                menuAudio.PlayOneShot(selectionSound);
+            menuAudio.PlayOneShot(selectionSound);
             }
             if (Input.GetKeyDown(KeyCode.W))
             {

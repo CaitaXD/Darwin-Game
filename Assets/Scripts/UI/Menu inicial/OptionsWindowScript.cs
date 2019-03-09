@@ -7,46 +7,43 @@ public class OptionsWindowScript : SelectionMasterScript {
     [SerializeField]
     Text text1,text2,text3,text4;
     string option  = "Menu";
- //   PlayerInfo _info;
     [SerializeField]
     GameObject slideBar;
     [SerializeField]
     Image mastervolumeImg,musicVolumeImg,effectsImg;
     [SerializeField]
     HelixScript _helixScript;
-    AudioSource sceneMusic;
-    AudioSource effects;
     string[] names;
     int i= 0;
     bool correctRes = false;
+    float sceneMusic = 0.5f, batlleSounds= 0.5f, ambientMusic = 0.5f;
+    AudioReader _audioReader;
 
     protected virtual void Start()
     {
+        if (GameObject.FindGameObjectWithTag("AudioReader") == null){}
+        else {
+            _audioReader = GameObject.FindGameObjectWithTag("AudioReader").GetComponent<AudioReader>();
+            _audioReader.sceneMusic = sceneMusic; _audioReader.batlleSounds = batlleSounds; _audioReader.ambientMusic = ambientMusic;
+        }
         base.Start();
-        
         names = QualitySettings.names;
-       
-        
     }
 
     protected override void Update()
     {
- 
+     
         base.Update();
-        if (GameObject.FindGameObjectWithTag("Player") != null)
-        {
-            effects = GameObject.FindGameObjectWithTag("Player").GetComponentInChildren<AudioSource>();
-        }
-            if  (GameObject.FindGameObjectWithTag("SceneSound") != null)
-        {
-            sceneMusic = GameObject.FindGameObjectWithTag("SceneSound").GetComponent<AudioSource>();
-        }
-       // _info = GameObject.FindGameObjectWithTag("Info").GetComponent<PlayerInfo>();
+
     }
     protected override void case1()
     {
       switch (option)
         {
+            case ("Shadows"):
+
+            break;
+
             case ("Resolution"):
                 ResolutionMethod();
                 break;
@@ -108,7 +105,8 @@ public class OptionsWindowScript : SelectionMasterScript {
             case ("Audio"):
                 slideBar.gameObject.SetActive(true);
                 mastervolumeImg.fillAmount = AudioListener.volume;
-                musicVolumeImg.fillAmount = sceneMusic.volume;
+                musicVolumeImg.fillAmount = sceneMusic;
+                effectsImg.fillAmount = batlleSounds;
                 if (Input.GetKeyDown(KeyCode.A))
                 {
                AudioListener.volume -= 0.1f;
@@ -145,6 +143,9 @@ public class OptionsWindowScript : SelectionMasterScript {
     {
         switch (option)
         {
+            case ("Shadows"):
+
+                break;
             case ("Resolution"):
                 ResolutionMethod();
                 break;
@@ -214,23 +215,24 @@ public class OptionsWindowScript : SelectionMasterScript {
             case ("Audio"):
                 slideBar.gameObject.SetActive(true);
                 mastervolumeImg.fillAmount = AudioListener.volume;
-                musicVolumeImg.fillAmount = sceneMusic.volume;
+                musicVolumeImg.fillAmount = sceneMusic;
+                effectsImg.fillAmount = batlleSounds;
                 if (Input.GetKeyDown(KeyCode.A))
                 {
-                    sceneMusic.volume -= 0.1f;
-                    if (sceneMusic.volume <= 0)
+                    sceneMusic -= 0.1f;
+                    if (sceneMusic <= 0)
                     {
-                        sceneMusic.volume = 0;
-                    }else if (sceneMusic.volume >= 1)
+                        sceneMusic = 0;
+                    }else if (sceneMusic >= 1)
                     {
-                        sceneMusic.volume = 1;
+                        sceneMusic = 1;
                     }
 
 
                 }
                 else if (Input.GetKeyDown(KeyCode.D))
                 {
-                    sceneMusic.volume += 0.1f;
+                    sceneMusic += 0.1f;
                 }
                 break;
         }
@@ -250,6 +252,21 @@ public class OptionsWindowScript : SelectionMasterScript {
     {
         switch (option)
         {
+            case ("Shadows"):
+
+                break;
+            case ("Video"):
+                if (Input.GetKeyDown(KeyCode.Return) && _helixScript.menuHierachy == 2)
+                {
+                    option = "Shadows";
+                    text1.text = "";
+                    text2.text = "";
+                    text3.text = "";
+                    text4.text = "";
+                }
+
+
+                break;
             case ("Resolution"):
                 ResolutionMethod();
                 break;
@@ -286,26 +303,25 @@ public class OptionsWindowScript : SelectionMasterScript {
             case ("Audio"):
                 slideBar.gameObject.SetActive(true);
                 mastervolumeImg.fillAmount = AudioListener.volume;
-                musicVolumeImg.fillAmount = sceneMusic.volume;
-                effectsImg.fillAmount = effects.volume;
+                musicVolumeImg.fillAmount = sceneMusic;
+                effectsImg.fillAmount = batlleSounds;
                 if (Input.GetKeyDown(KeyCode.A))
                 {
-                   effects.volume -= 0.1f;
-                    if (effects.volume <= 0)
-                    {
-                        effects.volume = 0;
-                    }
-                    else if (effects.volume >= 1)
-                    {
-                       effects.volume = 1;
-                    }
-
-
+                  batlleSounds -= 0.1f; 
                 }
                 else if (Input.GetKeyDown(KeyCode.D))
                 {
-                    effects.volume += 0.1f;
+                    batlleSounds += 0.1f;
                 }
+                if (batlleSounds <= 0)
+                {
+                    batlleSounds = 0;
+                }
+                else if (batlleSounds >= 1)
+                {
+                    batlleSounds = 1;
+                }
+
                 break;
         }
                 if (Input.GetKeyDown(KeyCode.Escape) && _helixScript.menuHierachy <= 2)
@@ -322,6 +338,9 @@ public class OptionsWindowScript : SelectionMasterScript {
     {
         switch (option)
         {
+            case ("Shadows"):
+
+                break;
             case ("Resolution"):
                 ResolutionMethod();
                 break;
@@ -371,6 +390,9 @@ public class OptionsWindowScript : SelectionMasterScript {
     {
         switch (option)
         {
+            case ("Shadows"):
+
+                break;
             case ("Resolution"):
                 ResolutionMethod();
                 break;
