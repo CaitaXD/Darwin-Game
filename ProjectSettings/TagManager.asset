@@ -30,7 +30,11 @@ TagManager:
   - ENDDEMO
   - Estalactite
   - SceneSound
+<<<<<<< HEAD
   - AudioReader
+=======
+  - DamageMechanic
+>>>>>>> a5bbc731b02d7cc2af41e3bdf4ab3076dbd226d4
   layers:
   - Default
   - TransparentFX

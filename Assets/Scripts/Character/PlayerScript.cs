@@ -268,6 +268,11 @@ public class PlayerScript : Character {
                 quickEnded = false;
             }
         }
+        if (other.gameObject.tag == "DamageMechanic")
+        {
+            deactivateParallax = true;
+            hitPoints -= 100;
+        }
     }
 
     private void OnTriggerExit(Collider other)
