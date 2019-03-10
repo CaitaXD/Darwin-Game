@@ -15,7 +15,7 @@ public class PlayerScript : Character {
     public CameraScript _cameraScript;
     public bool Cinematic;
     public float CinematicDuration;
-  protected  DamageScript _damageScript;
+    protected  DamageScript _damageScript;
     bool loaded;
     public float idleTimer;
     public bool QuickSand = false;
@@ -27,8 +27,8 @@ public class PlayerScript : Character {
     protected Vector3 ResetEuler;
     PlayerInfo _playerInfo;
     //Para matar o Player no final da animação
-    bool quickEnded;
-    float timerQuick;
+    bool deadtimer;
+    float timerdead;
 
 
  public override  void Start()
@@ -50,18 +50,18 @@ public class PlayerScript : Character {
         }
     }
     public override void FixedUpdate()
-    {
-     
-        
-        if(quickEnded)
+    {  
+        if(deadtimer)
         {
-            timerQuick += Time.deltaTime;
+            timerdead += Time.deltaTime;
         }
         //Se o Player Possuir a tag Dead, carrega o game over
         if (tag == "Dead")
         {
-            if (SceneManager.sceneCount <2)
-            SceneManager.LoadScene("GameOber", LoadSceneMode.Additive);
+            if (SceneManager.sceneCount < 2)
+            {
+                SceneManager.LoadScene("GameOber", LoadSceneMode.Additive);
+            }
         }
         base.FixedUpdate();
         //Atualiza para um gameobject com dontdestroyonload quanto de vida o player tem
@@ -224,13 +224,14 @@ public class PlayerScript : Character {
         {
             _enemyScript = other.gameObject.GetComponentInParent<EnemyScript>();
             _damageScript.TakeDamage();
-          
-        }   
+
+        }
         if (other.gameObject.tag == "Collect")
         {
 
         }
     }
+
     private void OnTriggerStay(Collider other)
     {
         //Desativa o efeito Parallax
@@ -261,17 +262,21 @@ public class PlayerScript : Character {
             anim.SetTrigger("Quicksand");
             QuickSand = true;
             rBody.velocity = new Vector3(0,0,0);
-            quickEnded = true;
-            if (timerQuick >= 3)
+            deadtimer = true;
+            if (timerdead >= 3)
             {
                 hitPoints -= 100;
-                quickEnded = false;
+                deadtimer = false;
             }
         }
         if (other.gameObject.tag == "DamageMechanic")
         {
             deactivateParallax = true;
-            hitPoints -= 100;
+            deadtimer = true;
+            if (timerdead >= 0.2)
+            {
+                hitPoints -= 100;
+            }
         }
     }
 

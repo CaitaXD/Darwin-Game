@@ -4,37 +4,28 @@
 TagManager:
   serializedVersion: 2
   tags:
-  - Camera Angle 2
-  - Camera Angle 3
+  - StopParallax
   - Camera Angle
   - Enemy
   - EnemyDamage
-  - PlayerDamage
   - Cave1
-  - Cave2
-  - End
-  - Info
-  - Quicksand
-  - HpBar
-  - Spawn
-  - FusionDysplaySelection
-  - BC1
   - BC2
-  - ChangeColl
-  - Collect
-  - Dead
-  - Teleport
-  - Stop
+  - Info
+  - BC1
+  - PlayerDamage
   - NewFusion
-  - StopParallax
-  - ENDDEMO
-  - Estalactite
+  - HpBar
+  - ChangeColl
   - SceneSound
-<<<<<<< HEAD
-  - AudioReader
-=======
+  - Cave2
   - DamageMechanic
->>>>>>> a5bbc731b02d7cc2af41e3bdf4ab3076dbd226d4
+  - Spawn
+  - Estalactite
+  - Collect
+  - Quicksand
+  - ENDDEMO
+  - DeadCheck
+  - Dead
   layers:
   - Default
   - TransparentFX
