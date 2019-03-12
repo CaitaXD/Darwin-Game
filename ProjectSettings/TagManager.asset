@@ -26,6 +26,8 @@ TagManager:
   - ENDDEMO
   - DeadCheck
   - Dead
+  - FusionDysplaySelection
+  - AudioReader
   layers:
   - Default
   - TransparentFX
