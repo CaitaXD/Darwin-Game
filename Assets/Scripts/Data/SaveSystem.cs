@@ -14,7 +14,7 @@ public static class SaveSystem {
         stream.Close();
 
     }
-    public static void SaveAudioData(OptionsWindowScript audio)
+    public static void SaveAudioData(AudioReader audio)
     {
         BinaryFormatter formatter = new BinaryFormatter();
         string path = Application.persistentDataPath + "/audio.save";

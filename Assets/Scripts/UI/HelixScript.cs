@@ -13,7 +13,8 @@ public class HelixScript : MonoBehaviour {
    Sprite Options, Fusions, Resume, Exit;
     [SerializeField]
     int selectionIs = 1;
-   public int menuHierachy = 0;
+    [SerializeField]
+    OptionsWindowScript _options;
     int previusSelection;
 
 	// Use this for initialization
@@ -24,7 +25,7 @@ public class HelixScript : MonoBehaviour {
 	
 	// Update is called once per frame
 	void  Update () {
-        if (Input.GetKeyDown(KeyCode.Escape) && menuHierachy == 1)
+        if (Input.GetKeyDown(KeyCode.Escape) && _options.menuHierachy == 1)
         {
             anim.SetTrigger("Unselect");
         }
@@ -40,10 +41,10 @@ public class HelixScript : MonoBehaviour {
         switch (selectionIs)
         {
             case 1:
-                if (Input.GetKeyDown(KeyCode.Return) && (menuHierachy == 0))
+                if (Input.GetKeyDown(KeyCode.Return) && (_options.menuHierachy == 0))
                     
                 {
-                    menuHierachy += 1;
+                    _options.menuHierachy += 1;
                     anim.SetTrigger("fusions");
                     previusSelection = 1;
                 }
@@ -53,7 +54,7 @@ public class HelixScript : MonoBehaviour {
                 break;
 
             case 2:
-                if (Input.GetKeyDown(KeyCode.Return) && (menuHierachy == 0))
+                if (Input.GetKeyDown(KeyCode.Return) && (_options.menuHierachy == 0))
                 {
                     Time.timeScale = 1;
                     SceneManager.UnloadSceneAsync("menu");
@@ -64,9 +65,9 @@ public class HelixScript : MonoBehaviour {
                 slot2.sprite = Fusions;
                 break;
             case 3:
-                if (Input.GetKeyDown(KeyCode.Return) && (menuHierachy == 0))
+                if (Input.GetKeyDown(KeyCode.Return) && (_options.menuHierachy == 0))
                 {
-                    menuHierachy += 1;
+                    _options.menuHierachy += 1;
                     Time.timeScale = 1;
                     Destroy(GameObject.FindGameObjectWithTag("Info"));
                     SceneManager.LoadScene("Menu Inicial");
@@ -78,9 +79,9 @@ public class HelixScript : MonoBehaviour {
                 break;
 
             case 4:
-                if (Input.GetKeyDown(KeyCode.Return) && (menuHierachy == 0))
+                if (Input.GetKeyDown(KeyCode.Return) && (_options.menuHierachy == 0))
                 {
-                    menuHierachy += 1;
+                    _options.menuHierachy += 1;
                     anim.SetTrigger("options");
                     previusSelection = 4;
                 }
@@ -94,7 +95,7 @@ public class HelixScript : MonoBehaviour {
                 if (Input.GetKeyUp(KeyCode.D) || Input.GetKeyUp(KeyCode.W) || Input.GetKeyUp(KeyCode.RightArrow) || Input.GetKeyUp(KeyCode.UpArrow))
         {
             selectionIs += 1;
-            if (menuHierachy == 0)
+            if (_options.menuHierachy == 0)
             {
                 anim.SetTrigger("HelixMoveright");
             }
@@ -103,7 +104,7 @@ public class HelixScript : MonoBehaviour {
         if (Input.GetKeyUp(KeyCode.A) || Input.GetKeyUp(KeyCode.S) || Input.GetKeyUp(KeyCode.LeftArrow) || Input.GetKeyUp(KeyCode.DownArrow))
         {
             selectionIs -= 1;
-            if (menuHierachy == 0)
+            if (_options.menuHierachy == 0)
             {
                 anim.SetTrigger("HelixMoveLeft");
             }
@@ -111,19 +112,19 @@ public class HelixScript : MonoBehaviour {
         }
         if (Input.GetKeyUp(KeyCode.Escape))
         {
-            if (menuHierachy == 0)
+            if (_options.menuHierachy == 0)
             {
                 Time.timeScale = 1;
                 SceneManager.UnloadSceneAsync("menu");
                
             }
-            if (menuHierachy >= 1)
+            if (_options.menuHierachy >= 1)
             {
                 selectionIs = previusSelection;
             }
-            if (menuHierachy != 0)
+            if (_options.menuHierachy != 0)
             {
-                menuHierachy -= 1;
+                _options.menuHierachy -= 1;
             }
           
         }

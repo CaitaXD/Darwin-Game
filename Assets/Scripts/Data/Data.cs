@@ -10,6 +10,8 @@ public class Data {
     public int mineralNumber;
     public float sceneMusic, batlleSounds, ambientMusic;
     public float msterVolume;
+    public int DiffycultyLevel =2;
+    public float enemySpeedMod, enemyDamageMod, enemyRangeMod;
 
     public Data (PlayerInfo info)
     {
@@ -18,12 +20,17 @@ public class Data {
         mineralNumber = info.number;
 
     }
-    public Data (OptionsWindowScript audio)
+    public Data (AudioReader audio)
     {
         sceneMusic = audio.sceneMusic;
         batlleSounds = audio.batlleSounds;
         ambientMusic = audio.ambientMusic;
         msterVolume = AudioListener.volume;
+        DiffycultyLevel = audio.DifficultyLevel;
+        enemySpeedMod = audio.enemySpeedMod;
+        enemyRangeMod = audio.enemyRangeMod;
+        enemyDamageMod = audio.enemyDamageMod;
+
     }
 
 }

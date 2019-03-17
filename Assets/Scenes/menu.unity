@@ -1538,10 +1538,13 @@ MonoBehaviour:
   mastervolumeImg: {fileID: 1676582166}
   musicVolumeImg: {fileID: 355538130}
   effectsImg: {fileID: 856739461}
-  _helixScript: {fileID: 1369328917}
+  menuHierachy: 0
   sceneMusic: 0.5
   batlleSounds: 0.5
   ambientMusic: 0.5
+  enemySpeedMod: 0
+  enemyDamageMod: 0
+  enemyRangeMod: 0
 --- !u!223 &723339197
 Canvas:
   m_ObjectHideFlags: 0
@@ -2646,7 +2649,7 @@ MonoBehaviour:
   Resume: {fileID: 21300000, guid: ac967a004c7849847a7056abb9d64592, type: 3}
   Exit: {fileID: 21300000, guid: ffaa29e097d803f46afade7ca934bad6, type: 3}
   selectionIs: 1
-  menuHierachy: 0
+  _options: {fileID: 723339196}
 --- !u!1 &1479303507
 GameObject:
   m_ObjectHideFlags: 0
