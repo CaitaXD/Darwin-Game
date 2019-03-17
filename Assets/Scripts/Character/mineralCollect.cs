@@ -8,7 +8,7 @@ public class mineralCollect : MonoBehaviour {
     Animator mineranim;
     bool istriggered = false;
     public Text numberCol;
-    public float number = 0;
+    public int number = 0;
 
     // Use this for initialization
     void Start ()

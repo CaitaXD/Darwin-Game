@@ -16,11 +16,12 @@ public class OptionsWindowScript : SelectionMasterScript {
     string[] names;
     int i= 0;
     bool correctRes = false;
-    float sceneMusic = 0.5f, batlleSounds= 0.5f, ambientMusic = 0.5f;
+  public  float sceneMusic = 0.5f, batlleSounds= 0.5f, ambientMusic = 0.5f;
     AudioReader _audioReader;
 
     protected virtual void Start()
     {
+        LoadOptions();  
         if (GameObject.FindGameObjectWithTag("AudioReader") == null){}
         else {
             _audioReader = GameObject.FindGameObjectWithTag("AudioReader").GetComponent<AudioReader>();
@@ -41,8 +42,19 @@ public class OptionsWindowScript : SelectionMasterScript {
       switch (option)
         {
             case ("Shadows"):
-
-            break;
+                if (Input.GetKeyDown(KeyCode.Return))
+                {
+                   
+                }
+                if (Input.GetKeyDown(KeyCode.Escape) && _helixScript.menuHierachy == 3)
+                {
+                    option = "Video";
+                    text1.text = "Graphics";
+                    text2.text = "Resolution";
+                    text3.text = "Shadows";
+                    text4.text = " ";
+                }
+                break;
 
             case ("Resolution"):
                 ResolutionMethod();
@@ -129,7 +141,7 @@ public class OptionsWindowScript : SelectionMasterScript {
         }
         if (Input.GetKeyDown(KeyCode.Escape) && _helixScript.menuHierachy == 2)
         {
-          
+            SaveSystem.SaveAudioData(this);
             option = "Menu";
             text1.text = "Video";
             text2.text = "Audio";
@@ -144,7 +156,18 @@ public class OptionsWindowScript : SelectionMasterScript {
         switch (option)
         {
             case ("Shadows"):
-
+                if (Input.GetKeyDown(KeyCode.Return))
+                {
+                   
+                }
+                if (Input.GetKeyDown(KeyCode.Escape) && _helixScript.menuHierachy == 3)
+                {
+                    option = "Video";
+                    text1.text = "Graphics";
+                    text2.text = "Resolution";
+                    text3.text = "Shadows";
+                    text4.text = " ";
+                }
                 break;
             case ("Resolution"):
                 ResolutionMethod();
@@ -187,14 +210,7 @@ public class OptionsWindowScript : SelectionMasterScript {
                 }
                 break;
             case ("Graphics"):
-                if (Input.GetKeyDown(KeyCode.Escape) && _helixScript.menuHierachy == 3)
-                {
-                    option = "Video";
-                    text1.text = "Graphics";
-                    text2.text = "Resolution";
-                    text3.text = "Shadows";
-                    text4.text = " ";
-                }
+             
                 if (Input.GetKeyDown(KeyCode.Escape) && _helixScript.menuHierachy == 3)
                 {
                     option = "Video";
@@ -238,11 +254,14 @@ public class OptionsWindowScript : SelectionMasterScript {
         }
         if (Input.GetKeyDown(KeyCode.Escape) && _helixScript.menuHierachy <= 2)
         {
+            SaveSystem.SaveAudioData(this);
             option = "Menu";
             text1.text = "Video";
             text2.text = "Audio";
             text3.text = "Difficulty";
             text4.text = "KeyBinds";
+
+            
         }
          
     }
@@ -253,11 +272,23 @@ public class OptionsWindowScript : SelectionMasterScript {
         switch (option)
         {
             case ("Shadows"):
-
+                if (Input.GetKeyDown(KeyCode.Return))
+                {
+                  
+                }
+                if (Input.GetKeyDown(KeyCode.Escape) && _helixScript.menuHierachy == 3)
+                {
+                    option = "Video";
+                    text1.text = "Graphics";
+                    text2.text = "Resolution";
+                    text3.text = "Shadows";
+                    text4.text = " ";
+                }
                 break;
             case ("Video"):
                 if (Input.GetKeyDown(KeyCode.Return) && _helixScript.menuHierachy == 2)
                 {
+                    _helixScript.menuHierachy += 1;
                     option = "Shadows";
                     text1.text = "";
                     text2.text = "";
@@ -326,7 +357,7 @@ public class OptionsWindowScript : SelectionMasterScript {
         }
                 if (Input.GetKeyDown(KeyCode.Escape) && _helixScript.menuHierachy <= 2)
         {
-            
+            SaveSystem.SaveAudioData(this);
             option = "Menu";
             text1.text = "Video";
             text2.text = "Audio";
@@ -339,7 +370,18 @@ public class OptionsWindowScript : SelectionMasterScript {
         switch (option)
         {
             case ("Shadows"):
-
+                if (Input.GetKeyDown(KeyCode.Return))
+                {
+                
+                }
+                if (Input.GetKeyDown(KeyCode.Escape) && _helixScript.menuHierachy == 3)
+                {
+                    option = "Video";
+                    text1.text = "Graphics";
+                    text2.text = "Resolution";
+                    text3.text = "Shadows";
+                    text4.text = " ";
+                }
                 break;
             case ("Resolution"):
                 ResolutionMethod();
@@ -391,7 +433,18 @@ public class OptionsWindowScript : SelectionMasterScript {
         switch (option)
         {
             case ("Shadows"):
-
+                if (Input.GetKeyDown(KeyCode.Return))
+                {
+                    
+                }
+                if (Input.GetKeyDown(KeyCode.Escape) && _helixScript.menuHierachy == 3)
+                {
+                    option = "Video";
+                    text1.text = "Graphics";
+                    text2.text = "Resolution";
+                    text3.text = "Shadows";
+                    text4.text = " ";
+                }
                 break;
             case ("Resolution"):
                 ResolutionMethod();
@@ -416,7 +469,6 @@ public class OptionsWindowScript : SelectionMasterScript {
      
         var res = Screen.resolutions.Where(resolution => resolution.refreshRate >= 60);
         Resolution[] resolutions = res.ToArray();
-        print(resolutions.Length);
         if (correctRes == false)
         {
             for (i = 0; i < resolutions.Length; i++)
@@ -447,6 +499,29 @@ public class OptionsWindowScript : SelectionMasterScript {
             text2.text = i.ToString();
 
         }
+        if (Input.GetKeyDown(KeyCode.Escape) && _helixScript.menuHierachy == 3)
+        {
+            option = "Video";
+            text1.text = "Graphics";
+            text2.text = "Resolution";
+            text3.text = "Shadows";
+            text4.text = " ";
+        }
+    }
+    public void SaveOptions ()
+    {
+        SaveSystem.SaveAudioData(this);
+    }
+    public void LoadOptions ()
+    {
+        Data data = SaveSystem.LoadAudioData();
+
+        sceneMusic = data.sceneMusic;
+        batlleSounds = data.batlleSounds;
+        AudioListener.volume = data.msterVolume;
+        ambientMusic = data.ambientMusic;
 
     }
+
+
 }

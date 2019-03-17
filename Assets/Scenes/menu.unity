@@ -653,7 +653,6 @@ GameObject:
   m_Component:
   - component: {fileID: 264007237}
   - component: {fileID: 264007240}
-  - component: {fileID: 264007239}
   - component: {fileID: 264007238}
   - component: {fileID: 264007242}
   m_Layer: 5
@@ -708,17 +707,6 @@ MonoBehaviour:
   m_FillAmount: 1
   m_FillClockwise: 1
   m_FillOrigin: 0
---- !u!114 &264007239
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 0}
-  m_GameObject: {fileID: 264007236}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 0762a864dd93c9041aa3325010b3ea98, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
 --- !u!222 &264007240
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -755,7 +743,6 @@ GameObject:
   m_Component:
   - component: {fileID: 301134607}
   - component: {fileID: 301134610}
-  - component: {fileID: 301134609}
   - component: {fileID: 301134608}
   - component: {fileID: 301134612}
   m_Layer: 5
@@ -810,17 +797,6 @@ MonoBehaviour:
   m_FillAmount: 1
   m_FillClockwise: 1
   m_FillOrigin: 0
---- !u!114 &301134609
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 0}
-  m_GameObject: {fileID: 301134606}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 0762a864dd93c9041aa3325010b3ea98, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
 --- !u!222 &301134610
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -1064,9 +1040,7 @@ GameObject:
   m_Component:
   - component: {fileID: 420056264}
   - component: {fileID: 420056267}
-  - component: {fileID: 420056266}
   - component: {fileID: 420056265}
-  - component: {fileID: 420056268}
   - component: {fileID: 420056270}
   m_Layer: 5
   m_Name: Settings and Stuff (3)
@@ -1120,17 +1094,6 @@ MonoBehaviour:
   m_FillAmount: 1
   m_FillClockwise: 1
   m_FillOrigin: 0
---- !u!114 &420056266
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 0}
-  m_GameObject: {fileID: 420056263}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 0762a864dd93c9041aa3325010b3ea98, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
 --- !u!222 &420056267
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -1138,17 +1101,6 @@ CanvasRenderer:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 420056263}
   m_CullTransparentMesh: 0
---- !u!114 &420056268
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 0}
-  m_GameObject: {fileID: 420056263}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 385b69698f920e64eb3b6e4cda13602a, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
 --- !u!223 &420056270
 Canvas:
   m_ObjectHideFlags: 0
@@ -1587,6 +1539,9 @@ MonoBehaviour:
   musicVolumeImg: {fileID: 355538130}
   effectsImg: {fileID: 856739461}
   _helixScript: {fileID: 1369328917}
+  sceneMusic: 0.5
+  batlleSounds: 0.5
+  ambientMusic: 0.5
 --- !u!223 &723339197
 Canvas:
   m_ObjectHideFlags: 0

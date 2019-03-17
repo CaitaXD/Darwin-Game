@@ -16,7 +16,7 @@ public class PlayerInfo : MonoBehaviour
     public bool activatTimer;
     fusionScript _fusionScript;
     public List<int> id;
-    public float number;
+    public int number;
     public bool tutorialRestrictions = false;
     [SerializeField]
     Vector3 Spawn;
