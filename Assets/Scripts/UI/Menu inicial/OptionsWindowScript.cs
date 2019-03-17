@@ -53,7 +53,6 @@ public class OptionsWindowScript : SelectionMasterScript {
             case ("Difficulty"):
                 if (DifficultyLevel == 1)
                 {
-                    _audioReader.Easy();
                     text1.color = Color.gray;
                     text2.color = Color.white;
                     text3.color = Color.white;
@@ -401,24 +400,28 @@ public class OptionsWindowScript : SelectionMasterScript {
                     switch (DifficultyLevel)
                     {
                         case (1):
+                            _audioReader.Easy();
                             text1.color = Color.gray;
                             text2.color = Color.white;
                             text3.color = Color.white;
                             text4.color = Color.white;
                             break;
                         case (2):
+                            _audioReader.Normal();
                             text1.color = Color.white;
                             text2.color = Color.gray;
                             text3.color = Color.white;
                             text4.color = Color.white;
                             break;
                         case (3):
+                            _audioReader.Hard();
                             text1.color = Color.white;
                             text2.color = Color.white;
                             text3.color = Color.gray;
                             text4.color = Color.white;
                             break;
                         case (4):
+                            _audioReader.Insane();
                             text1.color = Color.white;
                             text2.color = Color.white;
                             text3.color = Color.white; 

@@ -83,7 +83,7 @@ public class MorcegoInputs : EnemyScript{
     public override void Attack()
     {
         anim.SetTrigger("Bite");
-        damage = damage1;
+        damage = damage1*_audioReader.enemyDamageMod;
           
         
     }
@@ -104,7 +104,7 @@ public class MorcegoInputs : EnemyScript{
             y = y - y / 4;
             z = z + z / 4;
         
-            transform.Translate(0,-y, z);
+            transform.Translate(0,-y*_audioReader.enemySpeedMod, z*_audioReader.enemySpeedMod);
          
            
 

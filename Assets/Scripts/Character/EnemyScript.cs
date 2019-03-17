@@ -29,13 +29,19 @@ public class EnemyScript : Character {
     public GameObject stunPref;
     public GameObject stunObj;
     public bool stunSpawnOnce;
-
+   protected AudioReader _audioReader;
    
 
 
     // Use this for initialization
     public new virtual void Start () {
         base.Start();
+
+        if (GameObject.FindGameObjectWithTag("AudioReader") == null) { }
+        else
+        {
+            _audioReader = GameObject.FindGameObjectWithTag("AudioReader").GetComponent<AudioReader>();
+        }
         anim = GetComponentInChildren<Animator> ();
         rBody = GetComponent<Rigidbody>();
         player =  GameObject.FindGameObjectWithTag("Player");
@@ -46,7 +52,7 @@ public class EnemyScript : Character {
 
    public new  virtual void FixedUpdate()
 	{
-
+        attackDistance = _audioReader.enemyRangeMod;
         //Quando o inimigo morre, as ações são executadas
         if (gameObject.tag == "Dead")
         {
@@ -122,7 +128,7 @@ public class EnemyScript : Character {
         if (isDead == false)
         {
             anim.SetBool("Walk", true);
-            transform.Translate(0, 0, 0.11f);
+            transform.Translate(0, 0, 0.11f* _audioReader.enemySpeedMod);
         }
 	}
     //Método de ataque (override pelos inimigos devido a cada um ter uma maneira de atacar)

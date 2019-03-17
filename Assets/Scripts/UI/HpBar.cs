@@ -18,6 +18,7 @@ public class HpBar : MonoBehaviour {
 	// Update is called once per frame
 	void FixedUpdate ()
     {
+        if (GameObject.FindGameObjectWithTag("Player") != null)
         hpBar.fillAmount = Mathf.Lerp(hpBar.fillAmount, GameObject.FindGameObjectWithTag("Player").GetComponent<PlayerScript>().hitPoints / 100, Time.deltaTime * lerpSpeed);
     
         ColorUtility.TryParseHtmlString("#32CD32", out verdeLindo);

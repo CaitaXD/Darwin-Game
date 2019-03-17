@@ -16,6 +16,7 @@ public class ParallaxEffect : MonoBehaviour {
 	void FixedUpdate ()
     {
         //Para o efeito parallax parar ao tocar em alguma parede
+        if (GameObject.FindGameObjectWithTag("Player") != null)
         if (GameObject.FindGameObjectWithTag("Player").GetComponent<PlayerScript>().deactivateParallax == false)
         {
             //Faz o efeito Parallax

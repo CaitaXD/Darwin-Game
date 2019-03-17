@@ -19,7 +19,25 @@ public class AudioReader : MonoBehaviour {
         enemyRangeMod = data.enemyRangeMod;
         enemyDamageMod = data.enemyDamageMod;
 
+        switch (DifficultyLevel)
+        {
+            case (1):
+                Easy();
+                break;
+            case (2):
+                Normal();
+                break;
+            case (3):
+                Hard();
+                break;
+            case (4):
+                Insane();
+                break;
+
+        }
+
     }
+    
     public void Easy()
     {
         enemyDamageMod = 0.75f; enemyRangeMod = 0.75f; enemySpeedMod = 0.75f;
