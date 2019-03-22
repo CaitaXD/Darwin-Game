@@ -4,6 +4,7 @@ using UnityEngine;
 using UnityEngine.SceneManagement;
 
 public class PlayerScript : Character {
+  public static KeyCode Action1 = KeyCode.R, Action2 = KeyCode.T, Action3, Jump = KeyCode.Space, Interact = KeyCode.Tab;
     [SerializeField]
     protected float rollVelocity, stompVelocity;
     public float horizontal;
@@ -183,7 +184,7 @@ public class PlayerScript : Character {
                 {
                     anim.SetBool("onGround", true);
                     // Make it Jump
-                    if (Input.GetButtonDown("Jump") && (JumpDelay == false))
+                    if (Input.GetKeyDown(Jump) && (JumpDelay == false))
                     {
                         JumpDelay = true;
                         rBody.velocity = new Vector3(0, jumpVelocity, 0) * Time.deltaTime;
@@ -192,13 +193,13 @@ public class PlayerScript : Character {
                     }
 
 
-                    if (Input.GetKeyDown(KeyCode.T))
+                    if (Input.GetKeyDown(Action2))
                     {
                         anim.SetBool("Block", true);
                         timedBlockStatus = 1;
 
                     }
-                     if (Input.GetKeyUp(KeyCode.T))
+                     if (Input.GetKeyUp(Action2))
                     {
                         anim.SetBool("Block", false);
                         idleTimer = 0;

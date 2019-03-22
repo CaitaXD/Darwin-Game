@@ -22,7 +22,7 @@ public class TweakedInputs : PlayerScript
     public override void AttackInput()
     {
         //ataque de rabo
-        if (Input.GetKeyDown(KeyCode.R) && (RollDelay == false))
+        if (Input.GetKeyDown(Action1) && (RollDelay == false))
         {
             anim.SetBool("Sleep", false);
             MethodRollDealy();
@@ -33,7 +33,7 @@ public class TweakedInputs : PlayerScript
            
         }
         //ataque de garra
-        if (Input.GetKeyDown(KeyCode.Q) && (RollDelay == false))
+        if (Input.GetKeyDown(Action3) && (RollDelay == false))
             {
             anim.SetBool("Sleep", false);
             MethodRollDealy();

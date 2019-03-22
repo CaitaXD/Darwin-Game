@@ -104,7 +104,7 @@ public class fusionScript : MonoBehaviour
         //Se o input de fusao for ativado enquanto o inimigo está morto, começa a animação de fusão e guarda a fusão do prefab inimigo
         if (collider.gameObject.tag == ("Dead"))
         {
-            if (Input.GetKeyDown(KeyCode.Tab))
+            if (Input.GetKeyDown(PlayerScript.Interact))
             {
                 animPlayer.SetTrigger("fusion");
                 _fusionStore = collider.GetComponent<FusionStore>();

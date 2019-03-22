@@ -25,10 +25,14 @@ public class SelectionMasterScript : MonoBehaviour {
     // Use this for initialization
     virtual protected void Start () {
         arrowY = selectionArrow.position.y;
-        y1 = slot1.position.y;
-        y2 = slot2.position.y;
-        y3 = slot3.position.y;
-        y4 = slot4.position.y;
+        if (slot1 != null)
+            y1 = slot1.position.y;
+        if (slot2 != null)
+            y2 = slot2.position.y;
+        if (slot3 != null)
+            y3 = slot3.position.y;
+        if (slot4 != null)
+            y4 = slot4.position.y;
         if( slot5 !=null)
         y5 = slot5.position.y;
         if (GameObject.FindGameObjectWithTag("AudioReader") == null) { }

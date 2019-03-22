@@ -31,7 +31,7 @@ public class BatDarwinScript : PlayerScript {
             //Fly Attack
             if (!onGround)
             {
-                if (Input.GetKeyDown(KeyCode.R) && (RollDelay == false))
+                if (Input.GetKeyDown(Action1) && (RollDelay == false))
                 {
                     if (GameObject.FindGameObjectWithTag("Enemy") != null)
                         transform.LookAt(GameObject.FindGameObjectWithTag("Enemy").transform);
@@ -45,7 +45,7 @@ public class BatDarwinScript : PlayerScript {
 
                 }
                 //Fly da fusao bat darwin
-                if (Input.GetKeyDown(KeyCode.Space) && (JumpDelay == false))
+                if (Input.GetKeyDown(Jump) && (JumpDelay == false))
                 {
                     anim.SetBool("Planing", true);
                     gravity -= 55;
@@ -76,7 +76,7 @@ public class BatDarwinScript : PlayerScript {
             //Ataque do bat fusion
             if (onGround)
             {
-                if (Input.GetKeyDown(KeyCode.R) && (RollDelay == false))
+                if (Input.GetKeyDown(Action1) && (RollDelay == false))
                 {
                     anim.SetBool("Sleep", false);
                     anim.SetTrigger("Bite");

@@ -16,7 +16,7 @@ public class DarwinInputs : PlayerScript {
         {
             if (onGround)
             {   //Make it Roll
-                if (Input.GetKeyDown(KeyCode.R) && (RollDelay == false))
+                if (Input.GetKeyDown(Action1) && (RollDelay == false))
                 {
                     anim.SetBool("Sleep", false);
                     damagecollider.enabled = true;
@@ -34,7 +34,7 @@ public class DarwinInputs : PlayerScript {
             else if (!onGround)
             {
                 //Make it Stomp
-                if (Input.GetKeyDown(KeyCode.T))
+                if (Input.GetKeyDown(Action2))
                 {
                     rBody.velocity = new Vector3(0, stompVelocity, 0) * Time.deltaTime;
                     anim.SetTrigger("Stomp");
