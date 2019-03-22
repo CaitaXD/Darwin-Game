@@ -3,12 +3,19 @@ using System.Collections.Generic;
 using UnityEngine;
 
 public class AudioReader : MonoBehaviour {
+    public static AudioReader audioReader { get; private set; }
     public float sceneMusic = 0.5f, batlleSounds = 0.5f, ambientMusic = 0.5f;
     public float enemySpeedMod, enemyDamageMod, enemyRangeMod;
     public int DifficultyLevel= 2;
     private void Awake()
     {
-        DontDestroyOnLoad(this.gameObject);
+        if (audioReader == null)
+        {
+            audioReader = this;
+            DontDestroyOnLoad(this.gameObject);
+        }else {
+            Destroy(gameObject);
+        }
         Data data = SaveSystem.LoadAudioData();
         sceneMusic = data.sceneMusic;
         batlleSounds = data.batlleSounds;

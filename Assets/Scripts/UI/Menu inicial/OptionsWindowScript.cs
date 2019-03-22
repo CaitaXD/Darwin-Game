@@ -546,6 +546,14 @@ public class OptionsWindowScript : SelectionMasterScript {
 
             case ("Menu"):
                 slideBar.gameObject.SetActive(false);
+                if (Input.GetKeyDown(KeyCode.Return))
+                {
+                    option = "KeyBinds";
+                    text1.text = "Action1 " + PlayerScript.Action1.ToString();
+                    text2.text = "Action2 " + PlayerScript.Action2.ToString();
+                    text3.text = "Jump " + PlayerScript.Jump.ToString();
+                    text4.text = "Interact " + PlayerScript.Interact.ToString();
+                }
                 break;
         }
         if (Input.GetKeyDown(KeyCode.Escape) && menuHierachy <= 2)
